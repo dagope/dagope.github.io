@@ -6,16 +6,16 @@ author: David Gonzalo
 comments: true
 categories: [Jekyll, Blog]
 ---
-La finalidad de este articulo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla las publicaciones antes de publicar cualquier artículo.
+La finalidad de este artículo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla las publicaciones antes de publicar cualquier artículo.
 <!--break-->
 ### Requisitos para que todo funcione
-Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no están detallados aunque es muy parecido.
+Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no está detallado, aunque es muy parecido.
 - Tener una cuenta en GitHub o [crearla](https://github.com){:target="_blank"}.
 - Tener Git instalado en el equipo. [instalación y tutorial](https://git-scm.com/book/es/v1/Empezando-Instalando-Git){:target="_blank"}
 - Usaremos Visual Studio Code como editor. [descargar](https://code.visualstudio.com/download){:target="_blank"}
 
 ### Preparados listos
-Arrancamos!
+¡Arrancamos!
 
 #### Descargando Ruby y kit de desarrollo utilizados:
 * Ruby: Ruby 2.3.3 (x64) [descagar](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe)
@@ -59,19 +59,19 @@ gem install wdm
 
 ### Creando el blog
 La manera más sencilla de crear nuestro blog es partir de uno ya existente y usarlo como base para luego personalizarlo a nuestro gusto.
-Aquí teneís una lista de temas de blogs Jekyll. [Jekyll themes](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}
+Aquí tenéis una lista de temas de blogs Jekyll. [Jekyll themes](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}
 <br/>Ojo! dependiendo de la plantilla que elijas tendrás que instalar la configuración de plugins gem que necesite.
 
 #### Preparando el repositorio 
-Lo más importante, es tener cuenta en [GitHub](https://github.com){:target="_blank"}. Si no la tienes creala. 
-GitHub Será nuestro nuestro repositorio y a la vez nuestro hosting. Todo de forma gratuita y libre.
+Lo más importante, es tener cuenta en [GitHub](https://github.com){:target="_blank"}. Si no la tienes créala. 
+GitHub Será nuestro repositorio y a la vez nuestro hosting. Todo de forma gratuita y libre.
 Con tu cuenta creada, inicia sesión y te doy 2 opciones: 
 * Opción 1: Crear repositorio de cero.
-    <br/>Puedes elegir esta opción si quieres empezar con un repositorio vacío y subir el proyecto más tarde. Unicamente ten en cuenta de nombrar al repositorio con *username*.github.io
+    <br/>Puedes elegir esta opción si quieres empezar con un repositorio vacío y subir el proyecto más tarde. Únicamente ten en cuenta de nombrar al repositorio con *username*.github.io
 ![New repository]({{site.baseurl}}public/uploads/2017/09/create_new_repository_blog.png)
 
 * Opción 2: Crear repositorio por Fork
-    - Hacer un Fork del proyecto plantilla elejido. Si no sabes como hacerlo [aquí te explican cómo.](https://frontendlabs.io/3266--que-es-hacer-fork-repositorio-y-como-hacer-un-fork-github){:target="_blank"}.
+    - Hacer un Fork del proyecto plantilla elegido. Si no sabes cómo hacerlo [aquí te explican cómo.](https://frontendlabs.io/3266--que-es-hacer-fork-repositorio-y-como-hacer-un-fork-github){:target="_blank"}.
     - Navegar hasta Settings de nuestro proyecto y cambiar el **Repository name** por el valor *username*.github.io siendo el *username* vuestro nombre de usuario de github. Como se ve en la imagen de ejemplo de la opción 1.
 
 #### Preparando entorno
@@ -126,7 +126,7 @@ Abrimos la carpeta de trabajo con el editor Visual Studio Code (puedes usar el q
 
 
 ### Publicando y la magia de GitHubPages
-Cuando ya tengamos creado un nuevo articulo la mágia de publicarlo en la web es de GitHubPages.
+Cuando ya tengamos creado un nuevo articulo la magia de publicarlo en la web es de GitHubPages.
 Solamente nos encargamos de hacer commit y push de los cambios hacia el repositorio.
 ```bash
 git add .
@@ -138,7 +138,7 @@ git push origin master
 ### Configurando comentarios
 Para que los visitantes puedan dejar comentarios en post utilizamos la plataforma disqus.com que ya se encuentra instalada en esta plantilla. 
 Crea una cuenta en Disqus y dar de alta tu blog.
-Luego configura en el fichero *_config.yml* el parametro *userdisqus* con el usuario que has dado de alta.
+Luego configura en el fichero *_config.yml* el parámetro *userdisqus* con el usuario que has dado de alta.
 
 # Bonus: más comandos jekyll
 Más Comandos:
