@@ -10,7 +10,7 @@ title:            "dagope's blog"
 tagline:          "Diario de abordo Dagope"
 description:      "Mira, detrás de ti, un mono de tres cabezas."
 url:              http://dagope.github.io
-baseurl:          /
+baseurl:          http://dagope.github.io/
 locale:           es_es
 encoding:         utf-8
 
