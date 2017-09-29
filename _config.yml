@@ -9,8 +9,8 @@ permalink:        pretty
 title:            "dagope's blog"
 tagline:          "Diario de abordo Dagope"
 description:      "Mira, detrás de ti, un mono de tres cabezas."
-url:              http://dagope.github.io
-baseurl:          http://dagope.github.io/
+url:              https://dagope.github.io
+baseurl:          https://dagope.github.io/
 locale:           es_es
 encoding:         utf-8
 
