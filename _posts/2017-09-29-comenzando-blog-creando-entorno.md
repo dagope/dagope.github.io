@@ -1,0 +1,146 @@
+---
+published: true
+layout: post
+title: Cómo montar un blog para dedicarme a lo importante, escribir.
+author: David Gonzalo
+comments: true
+categories: [Jekyll, Blog]
+---
+La finalidad de este articulo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla las publicaciones antes de publicar cualquier artículo.
+<!--break-->
+### Requisitos para que todo funcione
+Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no están detallados aunque es muy parecido.
+- Tener una cuenta en GitHub o [crearla](https://github.com){:target="_blank"}.
+- Tener Git instalado en el equipo. [instalación y tutorial](https://git-scm.com/book/es/v1/Empezando-Instalando-Git){:target="_blank"}
+- Usaremos Visual Studio Code como editor. [descargar](https://code.visualstudio.com/download){:target="_blank"}
+
+### Preparados listos
+Arrancamos!
+
+#### Descargando Ruby y kit de desarrollo utilizados:
+* Ruby: Ruby 2.3.3 (x64) [descagar](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe)
+
+* Development KIT For use with Ruby 2.0 to 2.3 (x64 - 64bits only) 
+[descargar](https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)
+	
+Para probar otras versiones ir a la [página oficial](https://rubyinstaller.org/downloads/) pero siempre cuidado con que el Development Kit y la versión de Ruby sean compatibles.
+
+#### Instalando Ruby
+* Instalar Ruby en C:\Ruby
+<br/>y marcar la opción de agregar ruby al path sistema
+
+* Descrompribir DevKit en C:\RubyDevKit
+* Abrir línea de comandos y ejecutar:
+{% highlight shell %}
+ruby dk.rb init
+ruby dk.rb install
+{% endhighlight %}
+
+#### Instalando Jekyll
+Desde la misma línea de comandos antes abierta:
+* Instalar jekyll con el comando
+```bash
+gem install jekyll
+```	
+Si te sale el bloqueo del Firewall de windows permitidle acceso.
+
+* Instalar bundler
+```bash
+gem install bundler
+```
+* Instalar rouge
+```bash
+gem install rouge
+```
+* Instalar jeykyll watch
+```bash
+gem install wdm 
+```
+
+### Creando el blog
+La manera más sencilla de crear nuestro blog es partir de uno ya existente y usarlo como base para luego personalizarlo a nuestro gusto.
+Aquí teneís una lista de temas de blogs Jekyll. [Jekyll themes](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}
+<br/>Ojo! dependiendo de la plantilla que elijas tendrás que instalar la configuración de plugins gem que necesite.
+
+#### Preparando el repositorio 
+Lo más importante, es tener cuenta en [GitHub](https://github.com){:target="_blank"}. Si no la tienes creala. 
+GitHub Será nuestro nuestro repositorio y a la vez nuestro hosting. Todo de forma gratuita y libre.
+Con tu cuenta creada, inicia sesión y te doy 2 opciones: 
+* Opción 1: Crear repositorio de cero.
+    <br/>Puedes elegir esta opción si quieres empezar con un repositorio vacío y subir el proyecto más tarde. Unicamente ten en cuenta de nombrar al repositorio con *username*.github.io
+![New repository]({{site.baseurl}}public/uploads/2017/09/create_new_repository_blog.png)
+
+* Opción 2: Crear repositorio por Fork
+    - Hacer un Fork del proyecto plantilla elejido. Si no sabes como hacerlo [aquí te explican cómo.](https://frontendlabs.io/3266--que-es-hacer-fork-repositorio-y-como-hacer-un-fork-github){:target="_blank"}.
+    - Navegar hasta Settings de nuestro proyecto y cambiar el **Repository name** por el valor *username*.github.io siendo el *username* vuestro nombre de usuario de github. Como se ve en la imagen de ejemplo de la opción 1.
+
+#### Preparando entorno
+Tenéis que tener instalado el tooling de Git en vuestra máquina. [Mas info aquí](https://git-scm.com/book/es/v1/Empezando-Instalando-Git){:target="_blank"}
+- Crear la carpeta de trabajo p.ej: c:\proyectos\dagope.github.io
+- Abrir la consola en esa carpeta. Y ejecutar
+```bash
+git clone https://github.com/dagope/dagope.github.io.git
+```
+- Si fuieste por la opción 1 tendrás que descomprimir tu plantilla en esta carpeta.
+
+### Configuración del blog
+Abre el fichero *_config.yml* con tu editor favorito.
+Debemos configurar:
+<br/>*url*: http://username.github.io
+<br/>*repository*: username/username.github.io
+<br/>*userdisqus*: usuario de la plataforma disqus para los comentarios (ver más abajo)
+
+Y personalizaremos las propiedades:
+<br/>*title* 
+<br/>*tagline*
+<br/>*description*
+<br/>*author*
+<br/>*name*
+<br/>*twitter*
+
+### Compilando y arrancando en local
+Llegados a este punto únicamente tendrás que ejecutar el siguiente comando sobre la carpeta de trabajo:
+```bash
+bundle exec jekyll serve -w
+```
+Si no hay errores se ejecutará un servidor web sobre el puerto 4000 y ya podremos navegar a nuestro blog en la url  http://127.0.0.1:4000
+![Start jekyll]({{site.baseurl}}public/uploads/2017/09/runing_jekyll.png)
+
+¡Y ya tenemos nuestro blog en local!
+
+### Criterios para un nuevo artículo
+Abrimos la carpeta de trabajo con el editor Visual Studio Code (puedes usar el que más te guste). 
+<br/>De la estructura del blog debemos de saber lo básico y seguir unas reglas para no generar desorden. Enumero las siguientes:
+* Los publicaciones se crean en la carpeta *_posts*
+* Los archivos seguirán la nomenclatura yyyy-mm-dd-titulo-de-mi-ariculo.md
+* Al ser archivos .md se acepta el lenguaje markdown. Compatible con html.
+* El contenido (imagenes, ficheros, etc...) se incluyen en la carpeta *public/uploads/yyyy/mm* 
+* En cada post tenemos habilitadas una serie de propiedades al inicio del fichero:
+    - *published*: true,false si no queremos que se publique el articulo
+    - *layout*: post = la plantilla a usar, que por normal no cambiaremos
+    - *title*: título del articulo
+    - *author*: autor
+    - *comments*: true,false para habilitar los comentarios
+    - *categories*: array con las categorías en las que incluir el artículo [categoria1, categoria2 ...]
+* Para conseguir un de resumen de las primeras lineas del blog hacer uso del código `<!--break-->` 
+
+
+### Publicando y la magia de GitHubPages
+Cuando ya tengamos creado un nuevo articulo la mágia de publicarlo en la web es de GitHubPages.
+Solamente nos encargamos de hacer commit y push de los cambios hacia el repositorio.
+```bash
+git add .
+git commit -m "siempre un comentario"
+git push origin master
+```
+¡Así de fácil!
+
+### Configurando comentarios
+Para que los visitantes puedan dejar comentarios en post utilizamos la plataforma disqus.com que ya se encuentra instalada en esta plantilla. 
+Crea una cuenta en Disqus y dar de alta tu blog.
+Luego configura en el fichero *_config.yml* el parametro *userdisqus* con el usuario que has dado de alta.
+
+# Bonus: más comandos jekyll
+Más Comandos:
+*bundle exec jekyll serve -w --drafts*
+<br/>Ejecuta incluyendo los archivos en carpeta _drafts

@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            "dagope's blog"
+tagline:          "Diario de abordo Dagope"
+description:      "Mira, detrás de ti, un mono de tres cabezas."
+url:              http://dagope.github.io
+baseurl:          /
+locale:           es_es
+encoding:         utf-8
+
+author:
+  name:           "David Gonzalo"
+  url:            https://twitter.com/dagope
+  twitter:        dagope
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:           metadata
+
+repository:       dagope/dagope.github.io
+userdisqus:       dagope
