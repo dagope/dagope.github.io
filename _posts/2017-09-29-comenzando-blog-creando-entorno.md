@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Cómo montar un blog para dedicarme a lo importante, escribir.
 author: David Gonzalo
@@ -8,6 +8,23 @@ categories: [Jekyll, Blog]
 ---
 La finalidad de este artículo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla las publicaciones antes de publicar cualquier artículo.
 <!--break-->
+## Contenido
+- [Requisitos para que todo funcione](#requisitos-para-que-todo-funcione)
+- [Preparados listos](#preparados-listos)
+    - [Descargando Ruby y kit de desarrollo utilizados:](#descargando-ruby-y-kit-de-desarrollo-utilizados)
+    - [Instalando Ruby](#instalando-ruby)
+    - [Instalando Jekyll](#instalando-jekyll)
+- [Creando el blog](#creando-el-blog)
+    - [Preparando el repositorio](#preparando-el-repositorio)
+    - [Preparando entorno](#preparando-entorno)
+- [Configuración del blog](#configurando-el-blog)
+- [Compilando y arrancando en local](#compilando-y-arrancando-en-local)
+- [Publicando y ver la magia de GitHubPages](#publicando-y-viendo-la-magia-de-githubpages)
+- [Configurando comentarios para los artículos.](#configurando-comentarios-para-los-artículos)
+- [Trabajando más comodo con VS Code.](#trabajando-más-comodo-con-vs-code)
+- [Configuración en Local/Dev y en Producción](#configuración-en-localdev-y-en-producción)
+- [Guía para agregar nuevos artículos](#guía-para-agregar-nuevos-artículos)
+
 ## Requisitos para que todo funcione
 Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no está detallado, aunque es muy parecido.
 - Tener una cuenta en GitHub o [crearla](https://github.com){:target="_blank"}.
@@ -92,16 +109,13 @@ git clone https://github.com/dagope/dagope.github.io.git
 bundle install 
 ```
 
-## Configuración del blog
+## Configurando el blog
 Abre el fichero *_config.yml* con tu editor favorito.
 Debemos configurar:
 <br/>**url**: http://username.github.io
 <br/>**baseurl**: http://username.github.io/ 
-<div class="message">
-    En el repositorio de github el valor debe ser http://username.github.io/ pero para la correcta la ejecución en local el valor debe ser ser una barra `/` <a href="#a-tener-en-cuenta"> más info aqui</a>
-</div>
 <br/>**repository**: *username*/*username*.github.io
-<br/>**userdisqus**: usuario de la plataforma disqus para los comentarios (ver más abajo)
+<br/>**userdisqus**: usuario de la plataforma disqus para los comentarios [ver más abajo](#configurando-comentarios-para-los-artículos)
 
 Y personalizaremos las propiedades:
 <br/>*title* 
@@ -114,31 +128,16 @@ Y personalizaremos las propiedades:
 ## Compilando y arrancando en local
 Llegados a este punto únicamente tendrás que ejecutar el siguiente comando sobre la carpeta de trabajo:
 ```bash
-bundle exec jekyll serve -w
+bundle exec jekyll serve -w --config "_config.yml,_config_dev.yml"
 ```
 Si no hay errores se ejecutará un servidor web sobre el puerto 4000 y ya podremos navegar a la url  http://127.0.0.1:4000
 ![Start jekyll]({{site.baseurl}}public/uploads/2017/09/runing_jekyll.png)
 
 ¡Y ya tenemos nuestro blog en local!
 
-## Criterios para un nuevo artículo
-Abrimos la carpeta de trabajo con el editor Visual Studio Code (puedes usar el que más te guste). 
-<br/>De la estructura del blog debemos de saber lo básico y seguir unas reglas para no generar desorden. Enumero las siguientes:
-* Los publicaciones se crean en la carpeta *_posts*
-* Los archivos seguirán la nomenclatura yyyy-mm-dd-titulo-de-mi-ariculo.md
-* Al ser archivos .md se acepta el lenguaje markdown. Compatible con html.
-* El contenido (imagenes, ficheros, etc...) se incluyen en la carpeta *public/uploads/yyyy/mm* 
-* En cada post tenemos habilitadas una serie de propiedades al inicio del fichero:
-    - *published*: true,false si no queremos que se publique el articulo
-    - *layout*: post = la plantilla a usar, que por normal no cambiaremos
-    - *title*: título del articulo
-    - *author*: autor
-    - *comments*: true,false para habilitar los comentarios
-    - *categories*: array con las categorías en las que incluir el artículo [categoria1, categoria2 ...]
-* Para conseguir un de resumen de las primeras lineas del blog hacer uso del código `<!--break-->` 
 
 
-## Publicando y ver la magia de GitHubPages
+## Publicando y viendo la magia de GitHubPages
 Cuando ya tengamos creado un nuevo articulo la magia de publicarlo en la web es de GitHubPages.
 Solamente nos encargamos de hacer commit y push de los cambios hacia el repositorio.
 ```bash
@@ -162,13 +161,32 @@ Estos son los atajos de teclado:
 - Compilación:
 <strong>`CTRL` + `SHIFT` + `B`</strong>
 
-### A tener en cuenta
-En este repositorio he creado el fichero *prepareLocal.bat* que se encarga de la compilación y preparar el entorno en local. Si inspeccionas el código del script verás que modifica el fichero _config.yml, y cambia por nosotros el valor definido en baseurl para que contenga `/`. Esto es necesario para que las urls sean correctas en nuestro entorno local. Es importante que este cambio no lo publiquemos en nuestro repositorio, si no las urls, dejarán de funcionar.
-<br/>**IMPORTANTE**: no subir el fichero _config.yml en github después de configurarlo la primera vez o bien revisar el valor **baseurl**
-<br/>Producción --> baseurl: http://username.github.io/
-<br/>Local --> baseurl: /
+## Configuración en Local/Dev y en Producción
+En este repositorio hay creados dos ficheros de configuración:
+- **Configuración Local/Dev:**
+    El fichero _config_dev.yml configura los valores que ejecutamos en nuestro entorno local, tomando de base el fichero de producción. En este blog modificamos el valor de la clave *baseurl* con `/` para el entorno local.
+- **Configuración Producción:**
+    El fichero _config.yml es el fichero que será usado para el entorno de producción por GitHubPages, y el que modificamos en el punto de [arriba](#configurando-el-blog).
+
+## Guía para agregar nuevos artículos
+Abrimos la carpeta de trabajo con el editor Visual Studio Code (puedes usar el que más te guste). 
+<br/>De la estructura del blog debemos de saber lo básico y seguir unas reglas para no generar desorden. Enumero las siguientes:
+* Los publicaciones se crean en la carpeta *_posts*
+* Los archivos seguirán la nomenclatura yyyy-mm-dd-titulo-de-mi-ariculo.md
+* Al ser archivos .md se acepta el lenguaje markdown. Compatible con html.
+* El contenido (imagenes, ficheros, etc...) se incluyen en la carpeta *public/uploads/yyyy/mm* 
+* En cada post tenemos habilitadas una serie de propiedades al inicio del fichero:
+    - *published*: true,false si no queremos que se publique el articulo
+    - *layout*: post = la plantilla a usar, que por normal no cambiaremos
+    - *title*: título del articulo
+    - *author*: autor
+    - *comments*: true,false para habilitar los comentarios
+    - *categories*: array con las categorías en las que incluir el artículo [categoria1, categoria2 ...]
+* Para conseguir un de resumen de las primeras lineas del blog hacer uso del código `<!--break-->` 
+
 
 # Bonus: más comandos jekyll
-Más Comandos:
 *bundle exec jekyll serve -w --drafts*
+<br/>Ejecuta incluyendo los archivos en carpeta _drafts
+*bundle exec jekyll serve -w --config "_config.yml,_config_dev.yml"*
 <br/>Ejecuta incluyendo los archivos en carpeta _drafts

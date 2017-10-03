@@ -27,5 +27,4 @@ description:      "Mira, detrás de ti, un mono de tres cabezas."
 locale:           es_es
 encoding:         utf-8
 url:              https://dagope.github.io
-#    Next settings with value to work in local. Be careful not send to repository https://dagope.github.io/
-baseurl: https://dagope.github.io/
+baseurl:          /  
