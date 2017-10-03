@@ -168,7 +168,7 @@ En este repositorio he creado el fichero *prepareLocal.bat* que se encarga de la
 <br/>Producción --> baseurl: http://username.github.io/
 <br/>Local --> baseurl: /
 
-# Bonus2: más comandos jekyll
+# Bonus: más comandos jekyll
 Más Comandos:
 *bundle exec jekyll serve -w --drafts*
 <br/>Ejecuta incluyendo los archivos en carpeta _drafts
