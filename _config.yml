@@ -5,22 +5,6 @@ highlighter:      rouge
 # Permalinks
 permalink:        /:year/:month/:day/:title/
 
-# Setup
-title:            "dagope's blog"
-tagline:          "Diario de abordo Dagope"
-description:      "Mira, detrás de ti, un mono de tres cabezas."
-url:              https://dagope.github.io
-baseurl:          https://dagope.github.io/
-locale:           es_es
-encoding:         utf-8
-
-author:
-  name:           "David Gonzalo"
-  url:            https://twitter.com/dagope
-  twitter:        dagope
-
-paginate:         5
-
 # Custom vars
 version:          2.1.0
 
@@ -28,3 +12,20 @@ github:           metadata
 
 repository:       dagope/dagope.github.io
 userdisqus:       dagope
+
+# Setup
+author:
+  name:           "David Gonzalo"
+  url:            https://twitter.com/dagope
+  twitter:        dagope
+
+paginate:         5
+
+title:            "dagope's blog"
+tagline:          "Diario de abordo Dagope"
+description:      "Mira, detrás de ti, un mono de tres cabezas."
+locale:           es_es
+encoding:         utf-8
+url:              https://dagope.github.io
+#    Next settings with value to work in local. Be careful not send to repository https://dagope.github.io/
+baseurl: https://dagope.github.io/
