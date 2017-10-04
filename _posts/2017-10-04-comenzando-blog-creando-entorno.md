@@ -8,33 +8,35 @@ categories: [Jekyll, Blog]
 ---
 La finalidad de este artículo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla las publicaciones antes de publicar cualquier artículo.
 <!--break-->
-## Contenido
+# Contenido
+<!-- TOC -->
+
+- [Contenido](#contenido)
 - [Requisitos para que todo funcione](#requisitos-para-que-todo-funcione)
-- [Preparados listos](#preparados-listos)
     - [Descargando Ruby y kit de desarrollo utilizados:](#descargando-ruby-y-kit-de-desarrollo-utilizados)
     - [Instalando Ruby](#instalando-ruby)
     - [Instalando Jekyll](#instalando-jekyll)
 - [Creando el blog](#creando-el-blog)
     - [Preparando el repositorio](#preparando-el-repositorio)
     - [Preparando entorno](#preparando-entorno)
-- [Configuración del blog](#configurando-el-blog)
-- [Compilando y arrancando en local](#compilando-y-arrancando-en-local)
-- [Publicando y ver la magia de GitHubPages](#publicando-y-viendo-la-magia-de-githubpages)
-- [Configurando comentarios para los artículos.](#configurando-comentarios-para-los-artículos)
-- [Trabajando más comodo con VS Code.](#trabajando-más-comodo-con-vs-code)
+    - [Configurando el blog](#configurando-el-blog)
+    - [Compilando y arrancando en local](#compilando-y-arrancando-en-local)
+    - [Publicando y viendo la magia de GitHubPages](#publicando-y-viendo-la-magia-de-githubpages)
+- [Configurando comentarios.](#configurando-comentarios)
+- [Trabajando más cómodo con VS Code.](#trabajando-más-cómodo-con-vs-code)
 - [Configuración en Local/Dev y en Producción](#configuración-en-localdev-y-en-producción)
 - [Guía para agregar nuevos artículos](#guía-para-agregar-nuevos-artículos)
+- [Bonus: más comandos jekyll](#bonus-más-comandos-jekyll)
 
-## Requisitos para que todo funcione
-Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no está detallado, aunque es muy parecido.
+<!-- /TOC -->
+# Requisitos para que todo funcione
+<div class="message">Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no está detallado, aunque es muy parecido.
+</div>
 - Tener una cuenta en GitHub o [crearla](https://github.com){:target="_blank"}.
 - Tener Git instalado en el equipo. [instalación y tutorial](https://git-scm.com/book/es/v1/Empezando-Instalando-Git){:target="_blank"}
 - Usaremos Visual Studio Code como editor. [descargar](https://code.visualstudio.com/download){:target="_blank"}
 
-## Preparados listos
-¡Arrancamos!
-
-### Descargando Ruby y kit de desarrollo utilizados:
+## Descargando Ruby y kit de desarrollo utilizados:
 * Ruby: Ruby 2.3.3 (x64) [descagar](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe)
 
 * Development KIT For use with Ruby 2.0 to 2.3 (x64 - 64bits only) 
@@ -42,21 +44,21 @@ Lo descrito en este blog hace referencia a un entorno con Windows instalado. Par
 	
 Para probar otras versiones ir a la [página oficial](https://rubyinstaller.org/downloads/) pero siempre cuidado con que el Development Kit y la versión de Ruby sean compatibles.
 
-### Instalando Ruby
+## Instalando Ruby
 * Instalar Ruby en C:\Ruby
 <br/>y marcar la opción de agregar ruby al path sistema
 ![Install options ruby]({{site.baseurl}}public/uploads/2017/09/install_ruby.png)
 
 
-* Descromprimir DevKit en C:\RubyDevKit
-* Abrir línea de comandos y nos situamos en la carpeta donde descromprimimos c:\RubyDevKit y ejecutar:
+* Descomprimir DevKit en C:\RubyDevKit
+* Abrir línea de comandos y nos situamos en la carpeta donde descomprimimos c:\RubyDevKit y ejecutar:
 {% highlight shell %}
 ruby dk.rb init
 ruby dk.rb install
 {% endhighlight %}
 ![Install dev kit ruby]({{site.baseurl}}public/uploads/2017/09/install_dev_kit_ruby.png)
 
-### Instalando Jekyll
+## Instalando Jekyll
 Desde la misma línea de comandos antes abierta:
 * Instalar jekyll con el comando
 ```bash
@@ -78,12 +80,12 @@ gem install wdm
 ```
 
 
-## Creando el blog
+# Creando el blog
 La manera más sencilla de crear nuestro blog es partir de uno ya existente y usarlo como base para luego personalizarlo a nuestro gusto.
 Aquí tenéis una lista de temas de blogs Jekyll. [Jekyll themes](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}
-<br/>Ojo! dependiendo de la plantilla que elijas tendrás que instalar la configuración de plugins gem que necesite.
+<br/>**¡NOTA!** En este articulo los ejemplos son sobre el repositorio de este mismo blog. Donde ya está configurada y adaptada la plantilla. Si elijes otra plantilla tendrás que instalar los paquetes *gem* que necesite y revisar la configuración. 
 
-### Preparando el repositorio 
+## Preparando el repositorio 
 Lo más importante, es tener cuenta en [GitHub](https://github.com){:target="_blank"}. Si no la tienes créala. 
 GitHub Será nuestro repositorio y a la vez nuestro hosting. Todo de forma gratuita y libre.
 Con tu cuenta creada, inicia sesión y te doy 2 opciones: 
@@ -95,7 +97,7 @@ Con tu cuenta creada, inicia sesión y te doy 2 opciones:
     - Hacer un Fork del proyecto plantilla elegido. Si no sabes cómo hacerlo [aquí te explican cómo.](https://frontendlabs.io/3266--que-es-hacer-fork-repositorio-y-como-hacer-un-fork-github){:target="_blank"}.
     - Navegar hasta Settings de nuestro proyecto y cambiar el **Repository name** por el valor *username*.github.io siendo el *username* vuestro nombre de usuario de github. Como se ve en la imagen de ejemplo de la opción 1.
 
-### Preparando entorno
+## Preparando entorno
 Tenéis que tener instalado el tooling de Git en vuestra máquina. [Mas info aquí](https://git-scm.com/book/es/v1/Empezando-Instalando-Git){:target="_blank"}
 - Ir a vuestra carpeta de trabajo p.ej: c:\proyectos\
 - Abrir la consola en esa carpeta. Y ejecutar para este ejemplo:
@@ -147,12 +149,12 @@ git push origin master
 ```
 ¡Así de fácil!
 
-## Configurando comentarios para los artículos.
+# Configurando comentarios.
 Para que los visitantes puedan dejar comentarios en post utilizamos la plataforma disqus.com que ya se encuentra instalada en esta plantilla. 
 Crea una cuenta en Disqus y dar de alta tu blog.
 Luego configura en el fichero *_config.yml* el parámetro *userdisqus* con el usuario que has dado de alta.
 
-## Trabajando más comodo con VS Code.
+# Trabajando más cómodo con VS Code.
 Este repositorio se encuentra ya configurado para trabajar con Visual Studio Code de una forma más rápida y cómoda.
 La carpeta .vscode tiene definida los ficheros que automatizan para la compilación y lanzar el navegador.
 Estos son los atajos de teclado:
@@ -161,20 +163,20 @@ Estos son los atajos de teclado:
 - Compilación:
 <strong>`CTRL` + `SHIFT` + `B`</strong>
 
-## Configuración en Local/Dev y en Producción
+# Configuración en Local/Dev y en Producción
 En este repositorio hay creados dos ficheros de configuración:
 - **Configuración Local/Dev:**
     El fichero _config_dev.yml configura los valores que ejecutamos en nuestro entorno local, tomando de base el fichero de producción. En este blog modificamos el valor de la clave *baseurl* con `/` para el entorno local.
 - **Configuración Producción:**
     El fichero _config.yml es el fichero que será usado para el entorno de producción por GitHubPages, y el que modificamos en el punto de [arriba](#configurando-el-blog).
 
-## Guía para agregar nuevos artículos
+# Guía para agregar nuevos artículos
 Abrimos la carpeta de trabajo con el editor Visual Studio Code (puedes usar el que más te guste). 
 <br/>De la estructura del blog debemos de saber lo básico y seguir unas reglas para no generar desorden. Enumero las siguientes:
-* Los publicaciones se crean en la carpeta *_posts*
+* Las articulos se crean en la carpeta *_posts*
 * Los archivos seguirán la nomenclatura yyyy-mm-dd-titulo-de-mi-ariculo.md
 * Al ser archivos .md se acepta el lenguaje markdown. Compatible con html.
-* El contenido (imagenes, ficheros, etc...) se incluyen en la carpeta *public/uploads/yyyy/mm* 
+* El contenido (imágenes, ficheros, etc...) se incluyen en la carpeta *public/uploads/yyyy/mm* 
 * En cada post tenemos habilitadas una serie de propiedades al inicio del fichero:
     - *published*: true,false si no queremos que se publique el articulo
     - *layout*: post = la plantilla a usar, que por normal no cambiaremos
