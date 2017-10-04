@@ -64,4 +64,9 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+  <!-- Analitycs -->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>
