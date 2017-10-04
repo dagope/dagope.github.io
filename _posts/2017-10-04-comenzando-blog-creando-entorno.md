@@ -6,8 +6,8 @@ author: David Gonzalo
 comments: true
 categories: [Jekyll, Blog]
 ---
-La finalidad de este artículo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla las publicaciones antes de publicar cualquier artículo.
-<!--break-->
+La finalidad de este artículo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla los artículos antes de publicarlos.
+<!--break-->Y de esta manera, si cambio de PC, tengo todos los pasos detallados para que mi memoria no sufra, asi que vamos a ello.
 # Contenido
 <!-- TOC -->
 
