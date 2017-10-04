@@ -47,7 +47,7 @@ Para probar otras versiones ir a la [página oficial](https://rubyinstaller.org/
 ## Instalando Ruby
 * Instalar Ruby en C:\Ruby
 <br/>y marcar la opción de agregar ruby al path sistema
-![Install options ruby]({{site.baseurl}}public/uploads/2017/09/install_ruby.png)
+![Install options ruby]({{site.baseurl}}public/uploads/2017/10/install_ruby.png)
 
 
 * Descomprimir DevKit en C:\RubyDevKit
@@ -56,7 +56,7 @@ Para probar otras versiones ir a la [página oficial](https://rubyinstaller.org/
 ruby dk.rb init
 ruby dk.rb install
 {% endhighlight %}
-![Install dev kit ruby]({{site.baseurl}}public/uploads/2017/09/install_dev_kit_ruby.png)
+![Install dev kit ruby]({{site.baseurl}}public/uploads/2017/10/install_dev_kit_ruby.png)
 
 ## Instalando Jekyll
 Desde la misma línea de comandos antes abierta:
@@ -91,7 +91,7 @@ GitHub Será nuestro repositorio y a la vez nuestro hosting. Todo de forma gratu
 Con tu cuenta creada, inicia sesión y te doy 2 opciones: 
 * Opción 1: Crear repositorio de cero.
     <br/>Puedes elegir esta opción si quieres empezar con un repositorio vacío y subir el proyecto más tarde. Únicamente ten en cuenta de nombrar al repositorio con *username*.github.io
-![New repository]({{site.baseurl}}public/uploads/2017/09/create_new_repository_blog.png)
+![New repository]({{site.baseurl}}public/uploads/2017/10/create_new_repository_blog.png)
 
 * Opción 2: Crear repositorio por Fork
     - Hacer un Fork del proyecto plantilla elegido. Si no sabes cómo hacerlo [aquí te explican cómo.](https://frontendlabs.io/3266--que-es-hacer-fork-repositorio-y-como-hacer-un-fork-github){:target="_blank"}.
@@ -133,7 +133,7 @@ Llegados a este punto únicamente tendrás que ejecutar el siguiente comando sob
 bundle exec jekyll serve -w --config "_config.yml,_config_dev.yml"
 ```
 Si no hay errores se ejecutará un servidor web sobre el puerto 4000 y ya podremos navegar a la url  http://127.0.0.1:4000
-![Start jekyll]({{site.baseurl}}public/uploads/2017/09/runing_jekyll.png)
+![Start jekyll]({{site.baseurl}}public/uploads/2017/10/runing_jekyll.png)
 
 ¡Y ya tenemos nuestro blog en local!
 
