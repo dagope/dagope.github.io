@@ -46,7 +46,7 @@
   {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">
   {% endif %}
-  <link rel="alternate" type="application/atom+xml" title="Dagope blog" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{site.title}}" href="/atom.xml" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   {% if page.next.url %}
     <link rel="next" href="{{ page.next.url | replace:'index.html','' | prepend: site.url }}" title="{{ page.next.title }}">
