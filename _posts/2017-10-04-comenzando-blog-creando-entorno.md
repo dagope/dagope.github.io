@@ -14,8 +14,9 @@ La finalidad de este artículo es detallar los pasos a seguir para crear un blog
 - [Contenido](#contenido)
 - [Requisitos para que todo funcione](#requisitos-para-que-todo-funcione)
     - [Descargando Ruby y kit de desarrollo utilizados:](#descargando-ruby-y-kit-de-desarrollo-utilizados)
-    - [Instalando Ruby](#instalando-ruby)
-    - [Instalando Jekyll](#instalando-jekyll)
+    - [Instalando Ruby (Windows)](#instalando-ruby-windows)
+    - [Instalando Ruby (Ubuntu)](#instalando-ruby-ubuntu)
+    - [Instalando Jekyll (Windows/Ubuntu)](#instalando-jekyll-windowsubuntu)
 - [Creando el blog](#creando-el-blog)
     - [Preparando el repositorio](#preparando-el-repositorio)
     - [Preparando entorno](#preparando-entorno)
@@ -30,7 +31,7 @@ La finalidad de este artículo es detallar los pasos a seguir para crear un blog
 
 <!-- /TOC -->
 # Requisitos para que todo funcione
-<div class="message">Lo descrito en este blog hace referencia a un entorno con Windows instalado. Para Mac y Linux no está detallado, aunque es muy parecido.
+<div class="message">Lo descrito en este blog hace referencia a un entorno con Windows instalado. Aunque se detalla la instalación sobre un Ubuntu.
 </div>
 - Tener una cuenta en GitHub o [crearla](https://github.com){:target="_blank"}.
 - Tener Git instalado en el equipo. [instalación y tutorial](https://git-scm.com/book/es/v1/Empezando-Instalando-Git){:target="_blank"}
@@ -44,7 +45,7 @@ La finalidad de este artículo es detallar los pasos a seguir para crear un blog
 	
 Para probar otras versiones ir a la [página oficial](https://rubyinstaller.org/downloads/) pero siempre cuidado con que el Development Kit y la versión de Ruby sean compatibles.
 
-## Instalando Ruby
+## Instalando Ruby (Windows)
 * Instalar Ruby en C:\Ruby
 <br/>y marcar la opción de agregar ruby al path sistema
 ![Install options ruby]({{site.baseurl}}public/uploads/2017/10/install_ruby.png)
@@ -58,7 +59,15 @@ ruby dk.rb install
 {% endhighlight %}
 ![Install dev kit ruby]({{site.baseurl}}public/uploads/2017/10/install_dev_kit_ruby.png)
 
-## Instalando Jekyll
+## Instalando Ruby (Ubuntu)
+* Ejecutar los comandos:
+```bash
+sudo apt-get update
+sudo apt-get install ruby ruby-dev make gcc
+sudo apt-get install gcc ruby-dev libxslt-dev libxml2-dev zlib1g-dev
+```
+
+## Instalando Jekyll (Windows/Ubuntu)
 Desde la misma línea de comandos antes abierta:
 * Instalar jekyll con el comando
 ```bash
@@ -78,7 +87,6 @@ gem install rouge
 ```bash
 gem install wdm 
 ```
-
 
 # Creando el blog
 La manera más sencilla de crear nuestro blog es partir de uno ya existente y usarlo como base para luego personalizarlo a nuestro gusto.
@@ -103,6 +111,10 @@ Tenéis que tener instalado el tooling de Git en vuestra máquina. [Mas info aqu
 - Abrir la consola en esa carpeta. Y ejecutar para este ejemplo:
 ```bash
 git clone https://github.com/dagope/dagope.github.io.git
+```
+*UPDATE 01/11/17*: he dejado en este repositorio una plantilla base:
+```bash
+git clone https://github.com/dagope/TemplateBlog.git
 ```
 - Si fuieste por la opción 1 tendrás que descomprimir tu plantilla en esta carpeta.
 
