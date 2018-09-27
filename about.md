@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Acerca de
+title: Quién?
 ---
 
-Hola!, me llamo David y este es el blog de Dagope. ¿Y por qué Dagope? Pues un día decidí usar un Substring(0,2) con mi nombre y mis dos apellidos y resultado ha sido dagope. 
+Hola!, me llamo David y este es el blog de Dagope. ¿Y por qué Dagope? Proque es el resultado de aplicar un Substring(0,2) al nombre y apellidos. 
 
 Actualmente trabajo como desarrollador de software en [Tokiota](http://www.tokiota.com){:target="_blank"}, también entro en el rango de emprendedores en donde soy cofundador y responsable tecnológico de [Misit Life](http://www.misitlife.com){:target="_blank"}, y por si las horas de sueño no eran lo suficientemente cortas, me embarqué como organizador de la comunidad técnica [XantarDev](https://www.meetup.com/es-ES/XantarDev/){:target="_blank"} donde organizamos eventos y quedadas para hablar de temas relacionados con el mundo del desarrollo de software, directa o indirectamente.
 
-Como bien intuyes este blog irá de desarrollo de software, y el motivo por el cual hasta ahora no me había animado a tener un blog creo que ha sido por miedo a escribir, y seguramente que por falta de tiempo. Ahora, decidido a perder el miedo, y a intentar que este blog me cumpla la utilidad de tener bien ordenadas una gran cantidad de notas que me han acompañando en los proyectos que ido trabajando. Con esto el principal objetivo es tener un orden dentro de tanto desorden, porque ¿cuántas veces no he buscado algo y no lo he encontrado?. Stackoverflow no siempre tiene la respuesta ideal, por lo que tengo algún que otro tema en el tintero con la intención de ir publicando poco a poco, y quizás a alguien más que a mí mismo le pueda ser útil.
+Como bien intuyes este blog irá de desarrollo de software, y el motivo por el cuál hasta ahora no me había animado a tener un blog creo que ha sido por miedo a escribir, y seguramente por falta de tiempo. Pero voy a perder el miedo, y a intentar que este blog me cumpla la utilidad de tener bien ordenadas una gran cantidad de notas que me han acompañando en los proyectos que ido trabajando. Mi principal objetivo es el tener un orden dentro de tanto desorden, porque ¿cuántas veces no he buscado algo y no lo he encontrado?. Stackoverflow no siempre tiene la respuesta ideal, espero poco a poco ir publicando esos temas que tengo en el tintero, y quizás a alguien más que a mí mismo le pueda ser útil.
 
 Si quieres contactar conmigo puedes encontrarme:
 * [@dagope](https://twitter.com/dagope){:target="_blank"}
