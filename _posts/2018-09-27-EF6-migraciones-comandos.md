@@ -33,7 +33,7 @@ AutomaticMigrationsEnabled = false;
 ```
 
 ## Como resetear por completo la BD, eliminando las migraciones y empezando de cero.
-Partiendo de una BD donde ya estábamos trabajando con EF Migrations habilitado, nos interesa eliminar todas las migraciones existenes y crear un puto de control inicial en nuestro proyecto:
+Partiendo de una BD donde ya estábamos trabajando con EF Migrations habilitado, nos interesa eliminar todas las migraciones existentes y crear un punto de control inicial en nuestro proyecto:
 <br /> ¡ATENCIÓN! **Esto eliminará todos los datos de la BD** y únicamente si tenemos establecido un Seed() serán los datos que encontraremos al final del proceso.
  
 * Si disponemos una clase *Configuration* en nuestro proyecto  con alguna configuracion propia o un Seed() debemos guardarlo y agregarlo más tarde.
@@ -62,13 +62,13 @@ Update-Database -ProjectName "App1.Data" -verbose
 ```
 
 ### Extendiendo y personalizando una migración
-Si la migración Initial queremos que sea es un reset completo, automático, y que no falle aunque lo ejecutemos N veces. Hay que ir un paso más allá personalizando y extendiendo operaciones de migración.
+Si la migración Initial queremos que sea un reset completo, automático, y que no falle aunque lo ejecutemos N veces. Hay que ir un paso más allá personalizando y extendiendo operaciones de migración.
 Si en el punto anterior hemos borrado la BD y volvemos a ejecutar el mismo update-database obtendremos un error.
 <br />*¿Por qué?*
 <br />Pues porque el script que se genera de un DropTable no comprueba si la tabla existe previamente.
 <br />*¿Y ahora qué hacemos?*
 <br/>Para todo hay solución y EF nos permite crear nuestra propia operación y personalizar el código generado en la migración, así que podemos crear un método de extensión llamado *DropTableIfExists* y ejecutar el codigo sql para verificar que la tabla existe, antes de borrarlo. 
-La intención es que se ejecute el siguiente scrip sql (los ejemplos están contra una BD de SqlServer):
+La intención es que se ejecute el siguiente script sql (los ejemplos están contra una BD de SqlServer):
 ```sql
 IF EXISTS (SELECT name FROM sys.tables WHERE name = N'tabla' AND object_id = object_id(N'[dbo].[tabla]', N'U'))
 DROP TABLE [dbo].[tabla]
@@ -143,7 +143,7 @@ public static class Extensions
 ```bat
 Update-Database -ProjectName "App1.Data" -TargetMigration 0 -verbose -Script
 ```
-Estaremos bajando a la migiracion con nombre *Initial* (la cúal también se puede indicar con valor cero).
+Estaremos bajando a la migración con nombre *Initial* (la cúal también se puede indicar con valor cero).
 Y si ahora ejecutamos nuevamente veremos que no falla:
 ```bat
 Update-Database -ProjectName "App1.Data" -verbose
@@ -169,7 +169,7 @@ agregar el comando  -Script si queremos el ScriptSQL de ejecución de cambios.
 
 ## Editar una migración creada
 ¿Y si quiero editar una migración sin tener que crear otra nueva con el scaffolding aplicado? 
-Durante el desarrollo de una tarea, es muy probable que nos encontremos con la necesidad de cambiar nuestra migración por ejemplo para para incluir esa columna que nos haya podido olvidar en un primer momento. Por otra parte tampoco queda muy elegante tener 5 o 6 migraciones para una misma tarea de desarrollo.
+Durante el desarrollo de una tarea, es muy probable que nos encontremos con la necesidad de cambiar nuestra migración por ejemplo para incluir esa columna que nos haya podido olvidar en un primer momento. Por otra parte tampoco queda muy elegante tener 5 o 6 migraciones para una misma tarea de desarrollo.
 <br />Para editar nuestra migración:
 - Revisar en que estado se encuentra nuestra BD. Y situarnos en la migración anterior a la que vamos a editar.
 ```bat
@@ -181,7 +181,7 @@ Add-Migration -Name full_name_including_timestamp_of_last_migration -ProjectName
 ```
 - Una vez finalizado veremos como nuestro fichero de migración ha sido actualizado con los cambios que deseamo.
 
-<br/>Si intentamos hacer el proceso de forma manual y no usando los comandos, tendremos problemas al agregar próximas migraciones. El comando add-migractions también se encarga de modificar el fichero .resx que contiene un valor serializado del estado de la BD. 
+<br/>Si intentamos hacer el proceso de forma manual y no usando los comandos, tendremos problemas al agregar próximas migraciones. El comando *add-migration* también se encarga de modificar el fichero .resx que contiene un valor serializado del estado de la BD. 
 
 podemos consultar la tabla  __MigrationHistory order by MigrationId desc
 <br />Para editar nuestra migración: tendremos que ejecutar el comando de Add-Migrations indicando el nombre exacto de la migración que queremos sobrescribir, por lo general *yyyymmdddhhMMss_NombreDeMigracion*, y agregar el parámetro **-Force** para forzar el re-scaffold de la migración entera. Si no lo haces verás un warning amarillo que te lo indicará.
