@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: post
 title: Entity Framework 6 y sus migraciones.
 author: David Gonzalo
@@ -52,7 +52,7 @@ Add-Migration Initial
 Esto nos crea la carpeta Migrations con una clase yyyymmdddhhMMss_Initial.cs y sus metadados asociados.
 - Si ejecutamos esta migración sobre la BD y ya existen las mismas tablas en la BD, nos dará un error (lógico)
 <br />Como truco podemos abrir el fichero yyyymmdddhhMMss_Initial.cs y en el método Up() agregar al principio una llamada al método Down() para que limpie todo aquello que exista.
-<br />Para obtener el script de los cambios que se harán, agregamos el parámetro -Script:
+<br />Si queremos obtener el script sql de los cambios que ejecutarán, agregamos el parámetro -Script:
 ```bat
 Update-Database -ProjectName "App1.Data" -verbose  -Force -Script
 ```
@@ -196,13 +196,17 @@ sería recomendable poner la BD en el estado anterior a la migración. Y posteri
 Para migrar la Bd a una situación en concreto debe indicarse el parámetro **-TargetMigration** al comando update-database.
 Tal que así:
 ```bat
-Update-Database -ProjectName "App1.Data" –TargetMigration: NombreDeMigracion
+Update-Database -ProjectName "App1.Data" –TargetMigration NombreDeMigracion
 ```
 <br/>Para volver al inicio del todo y a una base de datos "vacía" (primera migración):
 ```bat
-Update-Database -ProjectName "App1.Data" –TargetMigration: $InitialDatabase.
+Update-Database -ProjectName "App1.Data" –TargetMigration $InitialDatabase.
+```
+o también indicando un cero:
+```bat
 Update-Database -ProjectName "App1.Data" –TargetMigration 0.
 ```
+
 ## Listado de migraciones en nuestra BD
 Para obtener las migraciones que están aplicadas sobre nuestra BD usaremos el siguiente comando
 ```bat
