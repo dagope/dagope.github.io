@@ -18,7 +18,7 @@ Para que esté bien claro, este post es sobre EF6, en uno posterior trataré sob
 - [Como crear nuevas migraciones:](#como-crear-nuevas-migraciones)
 - [Editar una migración creada](#editar-una-migración-creada)
 - [Crear una migración vacía](#crear-una-migración-vacía)
-    - [Cómo agrear mi script SQL a una migración](#cómo-agrear-mi-script-sql-a-una-migración)
+    - [Cómo agregar mi script SQL a una migración](#cómo-agregar-mi-script-sql-a-una-migración)
 - [Migrar a una versión concreta (Downgrade)](#migrar-a-una-versión-concreta-downgrade)
 - [Listado de migraciones en nuestra BD](#listado-de-migraciones-en-nuestra-bd)
 - [Depurar el Seed de Inicializacion de datos:](#depurar-el-seed-de-inicializacion-de-datos)
@@ -248,7 +248,7 @@ Add-Migration -Name ChangesInStoreProcedures -ProjectName "App1.Data"
 ```
 Esto nos genera nuestra migración con la diferencia de que los métodos Up() y Down() están vacíos.
 
-### Cómo agrear mi script SQL a una migración
+### Cómo agregar mi script SQL a una migración
 Para ejecutar cualquier script sql en los métodos Up() y Down() de nuestro fichero migration, tenemos el método Sql(...) heredado de DbMigration.
 <br/>¿Queremos agregar una vista al modelo de datos? Pues un ejemplo sería así:
 ```c#
