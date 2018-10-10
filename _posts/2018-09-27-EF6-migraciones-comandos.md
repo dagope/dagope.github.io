@@ -111,7 +111,7 @@ Ahora si inspeccionamos la tabla *__MigrationHistory* veremos el registro corres
 Si la migración Initial queremos que sea un reset completo, automático, y que no falle aunque lo ejecutemos N veces, hay que ir un paso más allá personalizando y extendiendo operaciones de migración.
 Si en el punto anterior hemos borrado la BD y volvemos a ejecutar el mismo update-database obtendremos un error.
 <br />*¿Por qué?*
-<br />Pues porque el script que se genera de un DropTable no comprueba si la tabla existe previamente.
+<br />Porque el script que se genera de un DropTable no comprueba si la tabla existe previamente.
 <br />*¿Y ahora qué hacemos?*
 <br/>Para todo hay solución y EF nos permite crear nuestra propia operación y personalizar el código generado en la migración, así que podemos crear un método de extensión llamado *DropTableIfExists* y ejecutar el código sql para verificar que la tabla existe, antes de borrarlo. 
 La intención es que se ejecute el siguiente script sql (los ejemplos están contra una BD de SqlServer):
@@ -119,6 +119,8 @@ La intención es que se ejecute el siguiente script sql (los ejemplos están con
 IF EXISTS (SELECT name FROM sys.tables WHERE name = N'tabla' AND object_id = object_id(N'[dbo].[tabla]', N'U'))
 DROP TABLE [dbo].[tabla]
 ```
+Para conseguir que EF genere nuestro sql personalizado seguiremos los siguientes pasos:
+
 * Creamos la operación:
 ```c#
  public class DropTableIfExistsOperation : MigrationOperation
@@ -183,7 +185,9 @@ public static class Extensions
     }
 }
 ```
-* Ahora en nuestro método Down la migración Initial podemos sustituir los ```DropTable("dbo.tabla")``` por nuestro ```this.DropTableIfExists("dbo.tabla")``` 
+* Ahora en nuestro método Down la migración Initial podemos sustituir los
+<br/> ```DropTable("dbo.tabla")``` 
+<br/>por nuestro ```this.DropTableIfExists("dbo.tabla")``` 
 
 <br />Ahora podemos ejecutar:
 ```bat
@@ -194,8 +198,9 @@ Y si ahora ejecutamos nuevamente veremos que no falla:
 ```bat
 Update-Database -ProjectName "App1.Data" -verbose
 ```
+Con esto ya que podemos eliminar por completo nuestra BD y actualizarla sin problemas a la última migración.
+<br/><br/>Esto es un ejemplo que puedes utilizar para crear tus propias operaciones.
 
-* Con esto ya que podemos eliminar por completo nuestra BD y actualizarla sin problemas a la última migración.
 
 ## Como crear nuevas migraciones:
 Nuestro código cambia y es normal que nuestra BD también evolucione, creando o borrando nuevos campos, tablas, etc...
