@@ -26,7 +26,7 @@ Para que esté bien claro, este post es sobre EF6, en uno posterior trataré sob
 
 <!-- /TOC -->
 
-<br/>Esto no pretende ser una guía de EF, por lo que doy por hecho que se conoce EF, y como funciona la creación de contextos. Sino para ello que mejor que una web con del tutorial con toda la info  [http://www.entityframeworktutorial.net](http://www.entityframeworktutorial.net){:target="_blank"}. 
+<br/>Esto no pretende ser una guía de EF, por lo que doy por hecho que se conoce EF, y como funciona la creación de contextos. Sino para ello que mejor que un tutorial con toda la info:  [http://www.entityframeworktutorial.net](http://www.entityframeworktutorial.net){:target="_blank"}. 
 
 
 ## Migraciones Automáticas y cuándo usarlas
