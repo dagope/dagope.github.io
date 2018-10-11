@@ -289,11 +289,11 @@ Update-Database -ProjectName "App1.Data" –TargetMigration NombreDeMigracion
 ```
 <br/>Para volver al inicio del todo y a una base de datos "vacía" (primera migración):
 ```bat
-Update-Database -ProjectName "App1.Data" –TargetMigration $InitialDatabase.
+Update-Database -ProjectName "App1.Data" –TargetMigration $InitialDatabase
 ```
 o también indicando un cero:
 ```bat
-Update-Database -ProjectName "App1.Data" –TargetMigration 0.
+Update-Database -ProjectName "App1.Data" –TargetMigration 0
 ```
 
 ## Listado de migraciones en nuestra BD
