@@ -21,6 +21,6 @@ El blog lo he construido a partir de los muchos temas que hay en esta [lista](ht
 Y si quieres saber más de como montar este mismo blog, en la primera publicación tienes todos los pasos detallados para construirlo. ¿Qué mejor manera de estrenar el blog que explicar cómo montar su entorno de desarrollo, no?
 
 
-Sin más, darte las gracias por leerme, y por su puesto, acepto encantado una [1906 (milnove)](https://cerveza1906.es/cerveza-1906-reserva-especial/){:target="_blank"} cuando me encuenres en los bares ;)
+Sin más, darte las gracias por leerme, y por supuesto, acepto encantado una cerveza [1906 (milnove)](https://cerveza1906.es/cerveza-1906-reserva-especial/){:target="_blank"} cuando me encuentres en los bares ;)
 
 Saludos!
