@@ -30,8 +30,10 @@ Para que esté bien claro, este post es sobre EF6, en uno posterior trataré sob
 
 
 ## Migraciones Automáticas y cuándo usarlas
-Tener habilitadas las migraciones automáticas puede ser muy útil cuando arrancamos un proyecto o hacer pruebas de concepto, pero más allá de esos casos yo las desaconsejo totalmente porque prefiero tener el control total que dejarlo en automático.
-Para desactivarlas, lo tenemos que marcar por código en la clase *Configuration* que herede de  *DbMigrationsConfiguration*:
+Tener habilitadas las migraciones automáticas puede ser muy útil cuando arrancamos un proyecto o para hacer pruebas de concepto, pero más allá de esos casos yo aconsejo tenerlas **siempre desactivadas**. Tendremos las migraciones totalmente controladas por código sin que la magia del automático trabaje por nosotros. 
+> La potencia sin control no sirve de nada.  — Pirelli & C. S.p.A.
+
+<br/>Para desactivarlas, lo tenemos que marcar por código en la clase *Configuration* que herede de  *DbMigrationsConfiguration*:
 ```c#
 AutomaticMigrationsEnabled = false;
 ```
