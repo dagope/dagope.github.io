@@ -18,7 +18,15 @@ Difieren un poco de las usadas en EF6, que ya comenté en un artículo anterior 
 Para las tareas que voy a explicar es suficiente con el uso de los comandos desde la PMC (*Package Manage Console*). También es bueno que conozcas los comandos desde la CLI *(Command Line Interface)*, hacen uso del tooling de dotnet y tienen más opciones de manejo.
 
 Vamos con el contenido:
-<!-- TOC -->autoauto- [Migraciones Automáticas en EF Core](#migraciones-automáticas-en-ef-core)auto- [Habilitar migraciones en una BD y viendo el detalle](#habilitar-migraciones-en-una-bd-y-viendo-el-detalle)auto- [Como crear nuevas migraciones](#como-crear-nuevas-migraciones)auto- [Editar la migración creada](#editar-la-migración-creada)auto- [Crear una migración vacía](#crear-una-migración-vacía)auto    - [Cómo agregar mi script SQL a una migración](#cómo-agregar-mi-script-sql-a-una-migración)auto- [Migrar a una versión concreta (Downgrade)](#migrar-a-una-versión-concreta-downgrade)auto- [Eliminar una migración](#eliminar-una-migración)auto- [Listado de migraciones en nuestra BD](#listado-de-migraciones-en-nuestra-bd)autoauto<!-- /TOC -->
+- [Migraciones Automáticas en EF Core](#migraciones-automáticas-en-ef-core)
+- [Habilitar migraciones en una BD y viendo el detalle](#habilitar-migraciones-en-una-bd-y-viendo-el-detalle)
+- [Como crear nuevas migraciones](#como-crear-nuevas-migraciones)
+- [Editar la migración creada](#editar-la-migración-creada)
+- [Crear una migración vacía](#crear-una-migración-vacía)
+    - [Cómo agregar mi script SQL a una migración](#cómo-agregar-mi-script-sql-a-una-migración)
+- [Migrar a una versión concreta (Downgrade)](#migrar-a-una-versión-concreta-downgrade)
+- [Eliminar una migración](#eliminar-una-migración)
+- [Listado de migraciones en nuestra BD](#listado-de-migraciones-en-nuestra-bd)
 
 
 ## Migraciones Automáticas en EF Core
