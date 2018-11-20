@@ -86,6 +86,10 @@ Esto nos genera nuestra migración con la diferencia de que los métodos Up() y 
 Si te fijas el fichero *SampleDbContextModelSnapshot.cs* no ha cambiado porque no se han detectado cambios. 
 Si utilizas git u otro control de versiones en tu proyecto es fácil observar los ficheros que se han creado y modificados, incluso comparar con versiones anteriores para observar que se hizo.
 
+No olvidemos que ambos métodos deben ser implementados y probados. Es un error muy común olvidarse de implementar el Down, y es tú responsabilidad que la migración pueda ser aplicada o desaplicada. 
+Recuerda, **tan importante es el método Down como el Up.**  
+
+
 ### Cómo agregar mi script SQL a una migración
 En los métodos Up() y Down() tienes el parámetro migrationBuilder que tiene un método SQL() para pasarle un string que ejecutar.
 ```c#
