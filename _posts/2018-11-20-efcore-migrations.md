@@ -2,7 +2,7 @@
 published: true
 date: 2018-11-20 15:00:56 +0100
 layout: post
-title: Entity Framework Core y migraciones.
+title: Entity Framework Core y sus migraciones.
 author: David Gonzalo
 comments: true
 categories: [EFCore, NetCore]
