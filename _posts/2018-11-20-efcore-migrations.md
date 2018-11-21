@@ -7,12 +7,13 @@ author: David Gonzalo
 comments: true
 categories: [EFCore, NetCore]
 ---
+![EFCore logo]({{site.baseurl}}public/uploads/2018/11/efcore.png)
+
 En esta ocasión voy a comentar las tareas que podemos realizar en las Migrations de Entity Framework Core (EFCore), y saber qué hacer con cada uno de los comandos.
 Difieren un poco de las usadas en EF6, que ya comenté en un artículo anterior y puedes leer [aquí]({{ site.baseurl }}2018/09/27/EF6-migraciones-comandos).
-
 <!--break-->
 
-<br/>Esto no pretende ser una guía de EF Core, por lo que se recomienda tener conocimientos sobre el funcionamiento del mismo y de la creación de contextos. Para ello que mejor que un tutorial con toda la info:
+Esto no pretende ser una guía de EF Core, por lo que se recomienda tener conocimientos sobre el funcionamiento del mismo y de la creación de contextos. Para ello que mejor que un tutorial con toda la info:
 [http://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx](http://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx){:target="_blank"}. 
 
 Para las tareas que voy a explicar es suficiente con el uso de los comandos desde la PMC (*Package Manage Console*). También es bueno que conozcas los comandos desde la CLI *(Command Line Interface)*, hacen uso del tooling de dotnet y tienen más opciones de manejo.
