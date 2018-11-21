@@ -6,7 +6,7 @@ title: Entity Framework Core y sus migraciones.
 author: David Gonzalo
 comments: true
 categories: [EFCore, NetCore]
-featured_image: public/uploads/2018/11/efcore.png
+featured_image: /public/uploads/2018/11/efcore.png
 excerpt: Las tareas del día a día que podemos realizar en las Migrations de Entity Framework Core.
 ---
 ![EFCore logo]({{site.baseurl}}public/uploads/2018/11/efcore.png)
