@@ -72,7 +72,7 @@ remove-migration -context SampleDbContext
 Add-Migration -Name NombreDeMigracion -Project "App1.Data" -context SampleDbContext
 ```
 
-**Recuerda:** si tienes algún script sql o modificación que hayas realizado en la migración debes hacer una copia de ese código para añadirlo en el último paso.
+Recuerda que si tienes algún script sql o modificación que hayas realizado en la migración debes hacer una copia de ese código para añadirlo en el último paso.
 
 ## Crear una migración vacía
 Hay veces que podemos tener cambios en objetos de nuestra BD que no interfieren directamente sobre nuestro contexto y el scaffolding no lo detecta. Cambios por ejemplo en un *store procedure*, function, views, etc...
@@ -86,8 +86,9 @@ Esto nos genera nuestra migración con la diferencia de que los métodos Up() y 
 Si te fijas el fichero *SampleDbContextModelSnapshot.cs* no ha cambiado porque no se han detectado cambios. 
 Si utilizas git u otro control de versiones en tu proyecto es fácil observar los ficheros que se han creado y modificados, incluso comparar con versiones anteriores para observar que se hizo.
 
-No olvidemos que ambos métodos deben ser implementados y probados. Es un error muy común olvidarse de implementar el Down, y es tú responsabilidad que la migración pueda ser aplicada o desaplicada. 
-Recuerda, **tan importante es el método Down como el Up.**  
+No olvidemos que ambos métodos deben ser implementados y probados. Es un error muy común centrarse solo en el código para el Up() olvidarse del Down(). Es tú responsabilidad que la migración pueda ser ejecutada en cualquier dirección. Así que codifiquemos ambos, ejecutemos el comando para upgrade y después para downgrade. Así aseguramos que no la líamos.
+
+**Recuerda**: tan importante es el método Down() como el Up().
 
 
 ### Cómo agregar mi script SQL a una migración
