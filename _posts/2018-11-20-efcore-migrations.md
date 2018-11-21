@@ -6,10 +6,12 @@ title: Entity Framework Core y sus migraciones.
 author: David Gonzalo
 comments: true
 categories: [EFCore, NetCore]
+featured_image: public/uploads/2018/11/efcore.png
+excerpt: Las tareas del día a día que podemos realizar en las Migrations de Entity Framework Core.
 ---
 ![EFCore logo]({{site.baseurl}}public/uploads/2018/11/efcore.png)
 
-En esta ocasión voy a comentar las tareas que podemos realizar en las Migrations de Entity Framework Core (EFCore), y saber qué hacer con cada uno de los comandos.
+En esta ocasión voy a comentar las tareas del día a día que podemos realizar en las Migrations de Entity Framework Core (EFCore), y saber qué hacer con cada uno de los comandos.
 Difieren un poco de las usadas en EF6, que ya comenté en un artículo anterior y puedes leer [aquí]({{ site.baseurl }}2018/09/27/EF6-migraciones-comandos).
 <!--break-->
 
