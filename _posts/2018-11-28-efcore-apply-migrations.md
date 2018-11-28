@@ -6,7 +6,7 @@ title: Aplicando las migraciones en EF Core
 author: David Gonzalo
 comments: true
 categories: [EFCore, NetCore]
-excerpt: Aplicando migraciones en tiempo de ejecución en EF Core.
+excerpt: Aplicando migraciones en tiempo de ejecución con EF Core.
 ---
 Continuando con las migraciones de EF Core del [post anterior]({{ site.baseurl }}2018/11/20/efcore-migrations), resulta muy útil saber cómo aplicarlas de forma "automática". 
 Durante el desarrollo de un proyecto vamos creando migraciones y ejecutándolas con el comando ya conocido ```update-database```. 
