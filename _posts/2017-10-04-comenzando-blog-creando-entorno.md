@@ -6,7 +6,7 @@ title: Cómo montar un blog para dedicarme a lo importante, escribir.
 author: David Gonzalo
 comments: true
 categories: [Jekyll, Blog]
-excerpt: Paos a seguir para crear un blog con Jekyll en GitHubPages y tener un entorno local donde crear artículos antes de publicarlos.
+excerpt: Pasos a seguir para crear un blog con Jekyll en GitHubPages y tener un entorno local donde crear artículos antes de publicarlos.
 ---
 La finalidad de este artículo es detallar los pasos a seguir para crear un blog como este y tener un entorno de desarrollo en local (Windows) donde poder previsualizar de forma sencilla los artículos antes de publicarlos.
 <!--break-->Y de esta manera, si cambio de PC, tengo todos los pasos detallados para que mi memoria no sufra, asi que vamos a ello.
