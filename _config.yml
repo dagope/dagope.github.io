@@ -29,4 +29,7 @@ encoding:         utf-8
 url:              https://dagope.github.io
 baseurl:          https://dagope.github.io/  
 google_analytics: UA-107487057-1
-icon:             /public/defaulticon.jpg
+icon:             /public/img/defaulticon.jpg
+
+plugins: 
+  - jekyll-sitemap
