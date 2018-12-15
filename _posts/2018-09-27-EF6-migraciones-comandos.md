@@ -1,10 +1,12 @@
 ---
 published: true
+date: 2017-11-02 00:00:00 +0100
 layout: post
-title: Entity Framework 6 y sus migraciones.
+title: Entity Framework 6 y sus migraciones
 author: David Gonzalo
 comments: true
 categories: [EF6, NET]
+excerpt: Las tareas del día a día para manejar las migraciones de Entity Framework 6.
 ---
 En este artículo voy a intentar explicar cómo usar las migraciones en Entity Framework (EF6) y las operaciones que podemos realizar para acabar manejándolas sin ningún problema. 
 Para que esté bien claro, este post es sobre EF6, en uno posterior trataré sobre EF Core. 

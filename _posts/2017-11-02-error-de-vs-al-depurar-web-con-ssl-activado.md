@@ -1,10 +1,13 @@
 ---
 published: true
+date: 2017-11-02 00:00:00 +0100
 layout: post
 title: El error de Visual Studio al depurar un proyecto Web con SSL activado
 author: David Gonzalo
 comments: true
 categories: [VisualStudio, Web]
+featured_image: /public/uploads/2017/11/error_vs_debug_ssl.jpg
+excerpt: Solución al error que produce Visual Studio al intentar depurar un proyecto web con SSL Activado
 ---
 Si estás intentando arrancar la depuración de un proyecto web en Visual Studio y obtienes el siguiente error:
 "An error ocurred attempting to determine the process id of dontnet.exe which is hosting your application. One or more errores occurred." Que no cunda el pánico. 
