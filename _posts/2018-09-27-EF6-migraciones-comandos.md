@@ -1,6 +1,6 @@
 ---
 published: true
-date: 2018-09-27 00:00:00 +0100
+date: 2018-09-27 12:00:00 +0100
 layout: post
 title: Entity Framework 6 y sus migraciones
 author: David Gonzalo

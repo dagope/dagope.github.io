@@ -1,6 +1,6 @@
 ---
 published: true
-date: 2017-11-02 00:00:00 +0100
+date: 2017-11-02 12:00:00 +0100
 layout: post
 title: El error de Visual Studio al depurar un proyecto Web con SSL activado
 author: David Gonzalo
