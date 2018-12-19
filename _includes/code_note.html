@@ -1,0 +1,11 @@
+<div class="note note">
+    <span class="notetitle">
+        {% if include.title == nil %}
+        Nota:
+        {% else %}
+        {{include.title}}
+        {% endif %}
+    </span> 
+{{include.content}}
+</div>
+    

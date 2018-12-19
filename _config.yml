@@ -35,3 +35,4 @@ icon:             /public/img/defaulticon.jpg
 
 plugins: 
   - jekyll-sitemap
+  - jemoji
