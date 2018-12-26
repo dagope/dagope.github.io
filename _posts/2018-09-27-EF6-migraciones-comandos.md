@@ -9,8 +9,7 @@ categories: [EF6, NET]
 excerpt: Las tareas del día a día para manejar las migraciones de Entity Framework 6.
 ---
 En este artículo voy a intentar explicar cómo usar las migraciones en Entity Framework (EF6) y las operaciones que podemos realizar para acabar manejándolas sin ningún problema. 
-Para que esté bien claro, este post es sobre EF6, en uno posterior trataré sobre EF Core. 
-
+Para que esté bien claro, este post es sobre EF6, en uno posterior trataré sobre EF Core.
 <!--break-->
 <!-- TOC -->
 
