@@ -14,7 +14,7 @@ title: Home
 
     {{ post.content | split:'<!--break-->' | first }}
     {% if post.content contains '<!--break-->' %}
-        <br/><a href="{{ post.url }}">... leer más</a>
+        <br/><a href="{{ post.url }}">Seguir leyendo &rsaquo;&rsaquo; </a>
      {% endif %}
 
   </div>
