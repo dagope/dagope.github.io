@@ -19,3 +19,22 @@ img.emoji {
     border-width: 0px;
     display: inline;
 }
+
+a.myButton {
+	background-color: #2F68A2;
+    border: 1px solid #295a8b;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff !important;
+    margin: 20px 0px;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+a.myButton:hover {
+    background-color:#3b84ce;
+    text-decoration:none;
+}

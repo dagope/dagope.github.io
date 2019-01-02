@@ -1,0 +1,64 @@
+<style>
+    #cookie-notice {padding: 2px 10px; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {cursor: pointer; margin-left: 5px;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 5px;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+    .btnOkCookie { background-color: forestgreen; }
+    #cookie-notice-accept{ color: #ffffff; }
+    .column {  float: left; }
+    .left {  width: 50%; }
+    .right {  width: 50%; cursor: pointer; }
+    .row:after { 
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+<div id="cookie-notice"><span>Uso <em>cookies</em> para ir mejorando este sitio.</span>
+    <div class="row">
+        <div class="column left">
+            <a href="/about" class="btn btn-primary btn-sm">Más info </a>         
+        </div>
+        <div class="column right btnOkCookie">
+            <span id="cookie-notice-accept" class="btn btn-primary btn-sm">OK</span>
+        </div>
+    </div>
+</div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        //nada por ahora
+    } else {
+
+        $('#cookie-notice').show();
+    }
+    $('#cookie-notice-accept , .btnOkCookie').click(function() {
+        createCookie('cookie-notice-dismissed','true',1000);
+        $('#cookie-notice').hide();
+    });
+
+</script>
