@@ -32,7 +32,7 @@ Si estás interesado en los orígenes de C# te recomiendo
 [este artículo](http://fernandoescolar.github.io/2019/02/05/historia-csharp/){:target="_blank"}
 donde Fernando lo ha resumido muy bien hasta el día de hoy. 
 
-Por otro lado, vamos a comentar brevemente como va esto de la escala _hot-crazy_.
+Por otro lado, vamos a comentar brevemente cómo va esto de la escala _hot-crazy_.
 
 ![escala sexy loca]({{site.baseurl}}public/uploads/2019/02/hot_crazy.jpg)
 
@@ -65,7 +65,7 @@ target='_blank'
 %}
 
 Y aquí es donde la feature que trae C# 8.0 aparece. Con el código de arriba obtendríamos un warning en la línea que en tiempo de ejecución nos estaba fallando.
-Lo bueno es que **ahora podemos marcar los tipos nulables** y que el compilador sepa donde hacemos uso de ellos, mostrándonos un warning en el caso de no validar correctamente el valor null.
+Lo bueno es que **ahora podemos marcar los tipos nulables** y que el compilador sepa dónde hacemos uso de ellos, mostrándonos un warning en el caso de no validar correctamente el valor null.
 
 Y el código anterior con C#8.0 nos quedaría así:
 ```csharp
@@ -80,7 +80,7 @@ class Program
 }
 ```
 
-¿Que ganamos? **Evitar posibles errores en tiempo de ejecución.**
+¿Qué ganamos? **Evitar posibles errores en tiempo de ejecución.**
 
 Parece que el público se ha dado cuente de ello.
 
@@ -90,7 +90,7 @@ Parece que el público se ha dado cuente de ello.
 
 
 ## Async streams
-Para facilitar el flujo de iteraciones de forma asíncrona en casos donde queremos leer datos sin bloquear la ejecución de un proceso, aparece ```IAsyncEnumerable```, que no es lo mismo que hacer ```async-await``` de una tarea que retorana un IEnumerable. 
+Para facilitar el flujo de iteraciones de forma asíncrona en casos donde queremos leer datos sin bloquear la ejecución de un proceso, aparece ```IAsyncEnumerable```, que no es lo mismo que hacer ```async-await``` de una tarea que retornará un IEnumerable. 
 
 Mejor explicarlo con un ejemplo de código que con tanta prosa.
 
@@ -155,7 +155,7 @@ title='Async Streams new feature Csharp 8 '
 target='_blank'
 %}
 
-Si quieres ejecutarlo tú te dejo este ejemplo en mi GitHub:
+Si quieres ejecutarlo tú mismo te dejo este ejemplo en mi GitHub:
 <br/>[https://github.com/dagope/chsarp8_async_streams](https://github.com/dagope/chsarp8_async_streams){:target="_blank"}
 
 > <p><b>Valoración del público</b>:</p>
@@ -177,7 +177,7 @@ Range range = people[2..^5];
 Range range = people[indexStart..indexEnd])
 ```
 
-Vamos a ver como funcionan con el código:
+Vamos a ver cómo funcionan con el código:
 
 ```csharp
 var people = new string[] {
@@ -198,12 +198,12 @@ Para coger elementos desde el final hacia el principio, **debemos empezar a cont
 
 
 Viendo el ejemplo sacamos las siguientes reglas para los índices:
-- Puedo traerme un rango indicando la posicion inicio y fin tal que ```people[0..3]```
-- Si quiero limitar por el final puedo omitir el indice de inicio tal que ```people[..3]```
-- Si quiero limitar por el principio tambien puedo decir que comience desde *Length - posicion*, es decir ```people[^4]```
+- Puedo traerme un rango indicando la posición inicio y fin tal que ```people[0..3]```
+- Si quiero limitar por el final puedo omitir el índice de inicio tal que ```people[..3]```
+- Si quiero limitar por el principio también puedo decir que comience desde *Length - posición*, es decir ```people[^4]```
 - Si quiero limitar por el principio puedo omitir el índice final tal que ```people[6..]```
 - La ausencia de alguno de los índices en el rango se tomará como el inicio que delimita. Por lo tanto si omito el de inicio contará desde 0, si omito el de final tomará la última posición, sería el ```people.Length```
-- Puedo omitir cualquiera de los limites indices y el rango tendría todos los valores, siendo como el valor normal entonces: 
+- Puedo omitir cualquiera de los índices y el rango tendría todos los valores, siendo como el valor normal entonces: 
 <br/>```people[..].Length == people.Length``` 
 <br/>Curioso, no?
 
@@ -218,7 +218,7 @@ Parece que no caló muy bien el nuevo símbolo ^ y la gente lo encontró algo m�
 
 C# cada vez está cogiendo más características de los lenguajes funcionales y esta es una de ellas. ¿te suena 
 [*Pattern Matching*](https://www.campusmvp.es/recursos/post/Pattern-matching-en-lenguajes-de-programacion-funcionales.aspx){:target="_blank"}
-? Si es así no te costará entender esto.
+? Entonces no te costará entender esto.
 
 Partiendo de una clase definida *Student*:
 ```csharp
@@ -271,7 +271,7 @@ IEnumerable<string> GetNameStudentsNotGraduated()
 
 ```
 
-Observamos que simplifica bastante la condición del ```if``` si pensamos en el filtrado que queremos hacer de nuestra colección. Debe cumplir que sea un objeto de tipo ```Student``` y con ```Graduated == false```. Además la propiedad ```Name``` me la asigne a una variable ``` string name ``` que usaré para agregarla con el ```yield``` a mi coleccion de nombres que devuelve mi función.
+Observamos que simplifica bastante la condición del ```if``` si pensamos en el filtrado que queremos hacer de nuestra colección. Este debe cumplir que sea un objeto de tipo ```Student``` y con ```Graduated == false```. Además, la propiedad ```Name``` la asigne a una variable ``` string name ``` que usaré para agregarla con el ```yield``` a mi colección de nombres que devuelve mi función.
 
 En mi opinión creo que es bastante más útil que *Crazy*. Y dada las valoraciones obtenidas parece que la gente optó más por el Crazy.
 
@@ -286,8 +286,7 @@ Esta característica viene a elevar los bloques ```switch``` a su máxima potenc
 1. Ahora podremos olvidarnos del ```case``` y en su lugar poner la "condición" de varias maneras:
  - Puedo seguir usando mi palabra ```when```, esto ya viene de C#7.
  - Y ¿por qué no un *Pattern matching* que acabamos de ver antes? Pues sí, puedes y te olvidas del uso de ```when```.
- - Y ¿por qué no un *Pattern matching* que acabamos de ver antes? Pues sí, puedes.
- - ¿por qué no un *Pattern matching* que acabamos de ver antes?
+ - Y ¿por qué no hacindo una deconstruccion del objeto? Pues sí, también puedes fumarte eso.
 
 ```csharp
 return o switch
@@ -302,7 +301,7 @@ return o switch
 ```
 <small>_Ojo: no copies este código tal cual, es probable que la combinación de las cláusulas falle, se muestra a modo de ejemplo_</small>
 
-- Olvidarnos del ```default``` y poner  ```_``` ya estaba en C# 7.0, no viene mal recordarlo porque escribir 7 caracteres a 1 es la vagancia máxima.
+- Olvidarnos del ```default``` y poner  ```_``` ya lo tenemos en C# 7.0, no viene mal recordarlo porque escribir 7 caracteres a 1 es la vagancia máxima.
 
 2. El cuerpo de cada función lo podemos expresar en una misma tras el ``=>``, y de paso también olvidarnos del ```break;``` al final. 
 Esto lo compro, me gusta.
@@ -327,7 +326,7 @@ Era de esperar.
 
 ## Implicit constructors
 
-Hacía falta un poco de 
+Hacía falta algo de 
 [*azúcar*](https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico){:target="_blank"}
 para digerir bien lo anterior y aquí llega un poco. 
 Esta característica cumple con la ley de los vagos de no escribir lo que es evidente.
@@ -354,9 +353,9 @@ Esto ha gustado ;)
 
 ## Using declaration
 
-Seguro que estás acostumbrado en utilizar los bloques ```using``` para abrir una conexión a base de datos, o en un ```Stream``` para la lectura del fichero, etc...
- en todas esas ocasiones nos asegurar que nuestro objeto Disposable ejecute su método Dispose() al finalizar el código que engloba el bloque using.
-Algo como:
+Seguro que estás acostumbrado a utilizar los bloques ```using``` para abrir una conexión a base de datos, o en un ```Stream``` para la lectura del fichero, etc...
+ en todas esas ocasiones nos aseguramos que nuestro objeto Disposable ejecute su método Dispose() al finalizar el código que engloba el bloque ```using```.
+Algo cómo:
 ```csharp
 static void Main(string[] args)
 {
@@ -404,7 +403,7 @@ Parece que tuvo buena aceptación.
 
 ## Default interfaces
 
-Bueno, y hemos llegado a la característica de la polémica. Como si de un debate político fuese, existen posturas de todos los colores, y se han escrito muchas opiniones al respecto. Se lleva años hablando del tema de si las Interfaces deberían implementar código.
+Bueno, hemos llegado a la característica de la polémica. Como si de un debate político se tratase, existen posturas de todos los colores, y se han escrito muchas opiniones al respecto. Se lleva años hablando del tema de si las Interfaces deberían implementar código.
 
 Al final ha llegado, y esto es lo que podemos hacer.
 
@@ -437,7 +436,7 @@ Había un polizón javero entre el público que seguro moderó los resultados ;-
 
 ## Conclusiones
 
-Tras el evento hemos publicamos una [página web con las estadísticas de las votaciones](https://netcoreapp.azurewebsites.net/), pero como no creo que la tengamos para siempre online, vamos a hacer unas capturas a continuación:
+Tras el evento hemos publicado una [página web con las estadísticas de las votaciones](https://netcoreapp.azurewebsites.net/), pero como no creo que la tengamos para siempre online, vamos a dejaros unas capturas a continuación:
 
 {% include code_image.html 
 image='2019/02/bcn_netcoreconf_results_crazyhot_1.png'
@@ -454,13 +453,13 @@ target='_blank'
 Estos son los datos, tuyas son las conclusiones.
 
 ### Bonus y referencias:
-Este artículo tiene su hermano mellizo en el post escrito por Fernando en su blog. Te recomiendo que lo leas, aunque se parecen se complementan.
+Este artículo tiene su hermano mellizo en el post escrito por Fernando en su blog. Te recomiendo que lo leas porque aunque se parecen, se complementan.
 
 Y como sabrás, Visual Studio 2019 está al caer y con su presentación llegarán todas estas features de C# 8.0, si algo cambia (cosa que dudo) lo veremos el próximo 2 de abril con la presentación que puedes seguir online.
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">The Visual Studio 2019 Launch Event is Coming April 2nd, 9:00am PT.<br><br>Whether you&#39;re a C#, C++, or Python dev &amp; target the web, desktop, or cloud, we&#39;ll have demos &amp; sessions for all the new goodies coming to <a href="https://twitter.com/hashtag/VS2019?src=hash&amp;ref_src=twsrc%5Etfw">#VS2019</a>.<br><br>Save the date &amp; join us: <a href="https://t.co/uGthsbkv7h">https://t.co/uGthsbkv7h</a> <a href="https://t.co/LsgZjglrzE">pic.twitter.com/LsgZjglrzE</a></p>&mdash; Visual Studio (@VisualStudio) <a href="https://twitter.com/VisualStudio/status/1096095478628917254?ref_src=twsrc%5Etfw">14 de febrero de 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Y si quieres profundizar más te unas referencias útiles:
+Y si quieres profundizar más te dejo unas referencias útiles:
 <br/>[https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/){:target="_blank"}
 <br/>[https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/){:target="_blank"}
 <br/>[https://vcsjones.com/2019/01/30/csharp-8-using-declarations/](https://vcsjones.com/2019/01/30/csharp-8-using-declarations/){:target="_blank"}
