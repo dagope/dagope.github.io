@@ -7,7 +7,9 @@ author: David Gonzalo
 comments: true
 categories: [C#, Net]
 excerpt: Cómo son vistas las novedades de c# 8.0 por quienes las usarán.
+disqus_page_identifier: 2019021500
 words: 2433
+codeStyle: enlighterjs
 ---
 El pasado 23 de enero tuve el placer de compartir escenario en la [@NetCoreConf](https://twitter.com/netcoreconf){:target="_blank"} de Barcelona con mi amigo 
 [@fernandoescolar](https://twitter.com/fernandoescolar){:target="_blank"}
@@ -23,8 +25,6 @@ En este artículo explicaré cada una de las novedades y veremos las puntuacione
         <li>Y ningún gatito ha sido maltratado.</li>
     </ul>
 </div>
-
-
 
 ## Antes de empezar
 Es bueno conocer un poco de historia, tan importante es saber de dónde viene un lenguaje como a donde se dirige. 
@@ -46,7 +46,7 @@ El propósito de esta nueva característica es ayudar con la gestión de valores
 La idea es "obligar" a marcar los tipos de referencia, p.ej: ```string``` o cualquier otra clase, como nulos haciendo uso del ya conocido símbolo de interrogación ```?```.
 
 Si ejecutamos este código sobre C#7.0 obtendríamos un error en tiempo de ejecución:
-```csharp
+<pre data-enlighter-language="csharp">
 using static System.Console;
 class Program
 {
@@ -56,7 +56,7 @@ class Program
         WriteLine($"The first letter of {s} is {s[0]}"); //Se produce un error porque s es null ---> NullReferenceException
     }
 }
-```
+</pre>
 Si intentamos nular el tipo string con ```string? s= null``` verás que el editor te avisa de que solo puedes nular tipos que sean non-nullable, y ```string``` es uno de ellos. 
 {% include code_image.html 
 image='2019/02/csharp8_error_string_null_c7.png'
@@ -68,7 +68,7 @@ Y aquí es donde la feature que trae C# 8.0 aparece. Con el código de arriba ob
 Lo bueno es que **ahora podemos marcar los tipos nulables** y que el compilador sepa dónde hacemos uso de ellos, mostrándonos un warning en el caso de no validar correctamente el valor null.
 
 Y el código anterior con C#8.0 nos quedaría así:
-```csharp
+<pre data-enlighter-language="csharp">
 using static System.Console;
 class Program
 {
@@ -78,7 +78,7 @@ class Program
         WriteLine($"The first letter of {s} is {s[0] ?? 'null' }");
     }
 }
-```
+</pre>
 
 ¿Qué ganamos? **Evitar posibles errores en tiempo de ejecución.**
 
@@ -94,21 +94,21 @@ Para facilitar el flujo de iteraciones de forma asíncrona en casos donde querem
 
 Mejor explicarlo con un ejemplo de código que con tanta prosa.
 
-```csharp
+<pre data-enlighter-language="csharp">
 static async Task Main(string[] args)
 {
     foreach(var data in await GetBigResultsAsync())
     {
-        Console.WriteLine($"{DateTime.Now.ToString()}  => {data}");
+        Console.WriteLine($&#x22;{DateTime.Now.ToString()}  =&#x3E; {data}&#x22;);
     }
  
     Console.ReadLine();
 }
  
-static async Task<IEnumerable<int>> GetBigResultsAsync()
+static async Task&#x3C;IEnumerable&#x3C;int&#x3E;&#x3E; GetBigResultsAsync()
 {
-    List<int> data = new List<int>();
-    for (int i = 1; i <= 10; i++)
+    List&#x3C;int&#x3E; data = new List&#x3C;int&#x3E;();
+    for (int i = 1; i &#x3C;= 10; i++)
     {
         await Task.Delay(1000); //Simulate waiting for external API
         data.Add(i);
@@ -116,7 +116,8 @@ static async Task<IEnumerable<int>> GetBigResultsAsync()
  
     return data;
 }
-```
+</pre>
+
 En el código de arriba el método GetBigResultsAsync() simula que tarda 1 segundo en obtener un dato numérico. 
 Iterando 10 veces tardaremos 10 segundos en devolver todos los datos en nuestra list.
 Está sucediendo que desde el primer segundo ya tenemos un dato que podría estar aprovechando los otros 9 segundos para ir procesándose. ¡Estamos desperdiciando un tiempo precioso de poner nuestra CPU a tope!
@@ -126,26 +127,26 @@ Pero se ejecuta en bloque y no puedo utilizar ```yield``` para devolver el dato.
 
 Pues con el nuevo ```IAsyncEnumerable``` y el  ```await foreach``` podemos transformar el código dejándolo tal que así:
 
-```csharp
+<pre data-enlighter-language="csharp">
 static async Task Main(string[] args)
 {
     await foreach(var data in GetBigResultsAsync())
     {
-        Console.WriteLine($"{DateTime.Now.ToString()}  => {data}"); //Processing data
+        Console.WriteLine($&#x22;{DateTime.Now.ToString()}  =&#x3E; {data}&#x22;); //Processing data
     }
  
     Console.ReadLine();
 }
  
-static async IAsyncEnumerable<int> GetBigResultsAsync()
+static async IAsyncEnumerable&#x3C;int&#x3E; GetBigResultsAsync()
 {
-    for (int i = 1; i <= 10; i++)
+    for (int i = 1; i &#x3C;= 10; i++)
     {
         await Task.Delay(1000); //Simulate waiting for external API
         yield return i;
     }
 }
-```
+</pre>
 
 ¿Te cuesta verlo? Te ayudará la siguiente animación que compara la ejecución de ambos códigos.
 
@@ -170,16 +171,17 @@ El índice contiene el valor que nos indica la posición del array a delimitar.
 
 
 Su sintaxis sería:
-```csharp
+<pre data-enlighter-language="csharp">
 Index indexStart = 1;
 Index indexEnd = ^5;
 Range range = people[2..^5];
 Range range = people[indexStart..indexEnd])
-```
+</pre>
+
 
 Vamos a ver cómo funcionan con el código:
 
-```csharp
+<pre data-enlighter-language="csharp">
 var people = new string[] {
     "Elena", "Armando", "Dolores", "Aitor", 
     "Leia", "Vader", "Yoda", "Skywalker"
@@ -189,7 +191,7 @@ foreach (var p in people[0..^5]) Console.Write($"{p}, ");   // Elena, Armando, D
 foreach (var p in people[^4]) Console.Write($"{p}, ");      // Leia, Vader, Yoda, Skywalker, 
 foreach (var p in people[6..]) Console.Write($"{p}, ");     // Yoda, Skywalker, 
 foreach (var p in people[..]) Console.Write($"{p}, ");      // Elena, Armando, Dolores, Aitor, Leia, Vader, Yoda, Skywalker,
-```
+</pre>
 
 Vemos que aparece en acción un nuevo símbolo, el ```^``` circunflejo:
 <br/>El uso del ```^``` circunflejo nos indica que nuestro valor del índice **comienza desde el final**.
@@ -221,46 +223,45 @@ C# cada vez está cogiendo más características de los lenguajes funcionales y 
 ? Entonces no te costará entender esto.
 
 Partiendo de una clase definida *Student*:
-```csharp
+<pre data-enlighter-language="csharp">
 class Student
 {
     public string Name { get; set; }
     public bool Graduated { get; set; }
 }
-```
+</pre>
 
 Si tenemos un array de objetos definidos como:
 
-```csharp
+<pre data-enlighter-language="csharp">
 var People = new object[] {
     new Student(){Name = "Leia", Graduated= false},
     new Student(){Name = "Yoda", Graduated= true},
     new Student(){Name = "Skywalker", Graduated= false},
 }
-```
+</pre>
 En C#7 para obtener los nombres de los no graduados haríamos un ```foreach``` con una condición ```if``` y devolviendo el nombre del objeto que cumpliese la condición.
 
 Sí, también podríamos usar Linq pero añadimos una dependencia a nuestra clase y tampoco es la finalidad del ejemplo.
 
 El código sería:
-```csharp
-IEnumerable<string> GetNameStudentsNotGraduated()
+<pre data-enlighter-language="csharp">
+IEnumerable&#x3C;string&#x3E; GetNameStudentsNotGraduated()
 {
     foreach (var p in People)
     {
-        if (p is Student && !p.Graduated)
+        if (p is Student &#x26;&#x26; !p.Graduated)
         {
             string name = p.Name;
             yield return name;
         }
-
     }
 }
-```
+</pre>
 
 Y en C#8 lo podemos transformar hacia: 
-```csharp
-IEnumerable<string> GetNameStudentsNotGraduated()
+<pre data-enlighter-language="csharp">
+IEnumerable&#x3C;string&#x3E; GetNameStudentsNotGraduated()
 {
     foreach (var p in People)
     {
@@ -268,8 +269,8 @@ IEnumerable<string> GetNameStudentsNotGraduated()
             yield return name;
     }
 }
+</pre>
 
-```
 
 Observamos que simplifica bastante la condición del ```if``` si pensamos en el filtrado que queremos hacer de nuestra colección. Este debe cumplir que sea un objeto de tipo ```Student``` y con ```Graduated == false```. Además, la propiedad ```Name``` la asigne a una variable ``` string name ``` que usaré para agregarla con el ```yield``` a mi colección de nombres que devuelve mi función.
 
@@ -288,7 +289,7 @@ Esta característica viene a elevar los bloques ```switch``` a su máxima potenc
  - Y ¿por qué no un *Pattern matching* que acabamos de ver antes? Pues sí, puedes y te olvidas del uso de ```when```.
  - Y ¿por qué no hacindo una deconstruccion del objeto? Pues sí, también puedes fumarte eso.
 
-```csharp
+<pre data-enlighter-language="csharp">
 return o switch
 {
     Point p when p.X == 5 && p.Y == 5   => "Hight 5",   //Disponible en C# 7.0
@@ -298,7 +299,7 @@ return o switch
     Point(var x, var y)                 => $"{x}, {y}", //Por deconstruccion
     _                                   => "unknown"
 };
-```
+</pre>
 <small>_Ojo: no copies este código tal cual, es probable que la combinación de las cláusulas falle, se muestra a modo de ejemplo_</small>
 
 - Olvidarnos del ```default``` y poner  ```_``` ya lo tenemos en C# 7.0, no viene mal recordarlo porque escribir 7 caracteres a 1 es la vagancia máxima.
@@ -306,14 +307,14 @@ return o switch
 2. El cuerpo de cada función lo podemos expresar en una misma tras el ``=>``, y de paso también olvidarnos del ```break;``` al final. 
 Esto lo compro, me gusta.
 
-```csharp
+<pre data-enlighter-language="csharp">
 var area = figure switch 
 {
     Rectangle r => r.Width * r.Height,
     Circle c    => Math.PI * c.Radius * c.Radius,
     _           => 0
 };
-```
+</pre>
 
 Bien, pues la imaginación es tu límite en lo que puedes hacer dentro de un ```switch```.
 
@@ -335,7 +336,7 @@ Si tenemos un array de Personas y queremos inicializarlo,
 ¿Por qué tengo que poner un ```new Person(...)``` a cada elemento si ya el array está tipado?
 Pues dicho y hecho, ahora podremos omitirlo porque no tiene sentido:
 
-```csharp
+<pre data-enlighter-language="csharp">
 Person[] people =
 {
     new ("Elena", "Nito", "del Bosque"),
@@ -343,7 +344,7 @@ Person[] people =
     new ("Dolores", "Cabeza", "Baja"),
     new ("Aitor", "Tilla", "del Bosque"),
 };
-```
+</pre>
 
 > <p><b>Valoración</b>:</p>
 > <p>Useful = <b>7.0</b></p>
@@ -356,7 +357,7 @@ Esto ha gustado ;)
 Seguro que estás acostumbrado a utilizar los bloques ```using``` para abrir una conexión a base de datos, o en un ```Stream``` para la lectura del fichero, etc...
  en todas esas ocasiones nos aseguramos que nuestro objeto Disposable ejecute su método Dispose() al finalizar el código que engloba el bloque ```using```.
 Algo cómo:
-```csharp
+<pre data-enlighter-language="csharp">
 static void Main(string[] args)
 {
     using (var disposable = CreateDisposable(args))
@@ -364,28 +365,28 @@ static void Main(string[] args)
           ...
     } // disposable is disposed here
 }
-```
+</pre>
 
 Con esta nueva característica ahora podremos indicar el ámbito del using sobre una variable, sin necesidad de encapsular el código dentro de un bloque ```using```.
 El método Dispose() del objeto se ejecutará cuando su ámbito finalice.
 
-```csharp
+<pre data-enlighter-language="csharp">
 static void Main(string[] args)
 {
     using var disposable = CreateDisposable(args);
     ...
 } // disposable is disposed here
-```
+</pre>
 
 Existen algunas limitaciones sobre el uso:
 - No puedes reasignar una variable
-```csharp
+<pre data-enlighter-language="csharp">
 using var stream = file1.Open();
 stream = file2.Open();
-```
+</pre>
 
 - No se puede enlazar a una variable de salida
-```csharp
+<pre data-enlighter-language="csharp">
 if (myCustomMethod(
     out using var stream, // Error
     ref size)
@@ -393,7 +394,7 @@ if (myCustomMethod(
 {
     // our code
 }
-```
+</pre>
 
 > <p><b>Valoración del público</b>:</p>
 > <p>Useful = <b>6.0</b></p>
@@ -407,7 +408,7 @@ Bueno, hemos llegado a la característica de la polémica. Como si de un debate 
 
 Al final ha llegado, y esto es lo que podemos hacer.
 
-```csharp
+<pre data-enlighter-language="csharp">
 interface ILogger
 {
     void Log(LogLevel level, string message);
@@ -419,8 +420,7 @@ class ConsoleLogger : ILogger
     public void Log(LogLevel level, string message) { ... }
     // Log(Exception) gets default implementation
 }
-
-```
+</pre>
 
 En mi opinión, de siempre una interfaz se ha definido como un "contrato" que todo objeto debe cumplir. Si ese "contrato" no lo cumples en su totalidad no es un objeto válido. Bien, pues que ahora una *interface* pueda incluir código por defecto es como exponer un "contrato" con letra pequeña si no lo cumples. Una letra pequeña que nadie lee o se nos olvida leer en profundidad.
 
@@ -471,7 +471,7 @@ Fue un gran evento y creo que nos divertimos dejando la vara de medir al públic
 <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://www.thingiverse.com/download:6080355&color=white&bgcolor=gray&shading=flat&rotation=yes&orientation=bottom" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 El diseño lo he dejado [aquí publicado.](https://www.thingiverse.com/thing:3434291){:target="_blank"}
 
-Y el momento de tal honorable reconcomiendo:
+Y el momento de tal honorable reconocimiento:
 <blockquote class="twitter-tweet" data-lang="es"><p lang="es" dir="ltr">Y aquí la foto finish de la Hot Crazy C# junto con <a href="https://twitter.com/fernandoescolar?ref_src=twsrc%5Etfw">@fernandoescolar</a>: la entrega de nuestro reconocimiento (único y exclusivo) al +Crazy y al +Usefull de entre los votos del público.  <a href="https://twitter.com/hashtag/netcoreconf?src=hash&amp;ref_src=twsrc%5Etfw">#netcoreconf</a> <a href="https://twitter.com/hashtag/lohemospasadogenial?src=hash&amp;ref_src=twsrc%5Etfw">#lohemospasadogenial</a> <a href="https://t.co/qgjyzJmLNn">pic.twitter.com/qgjyzJmLNn</a></p>&mdash; David Gonzalo (@dagope) <a href="https://twitter.com/dagope/status/1089629650664521730?ref_src=twsrc%5Etfw">27 de enero de 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

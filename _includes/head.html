@@ -19,6 +19,7 @@
     {% endif %}
   </title>
 
+
   <!-- Social Metas -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
@@ -71,7 +72,8 @@
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css?201812151039">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/dagopesite.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-
+  
+  
   <!-- Icons -->
   <link rel="shortcut icon"                                href="{{ site.baseurl }}public/img/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon-precomposed"                 href="{{ site.baseurl }}public/img/apple-touch-icon.png" />
@@ -88,6 +90,12 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+  {% if page.codeStyle == "enlighterjs" %}
+   <!-- Include dependeces EnlighterJS  -->
+   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}public/css/EnlighterJS.min.css" />       
+   <script type="text/javascript" src="{{ site.baseurl }}public/scripts/mootools-core-compat.min.js"></script>
+  {% endif %}
 
   {% seo %} 
   

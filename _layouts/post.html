@@ -58,3 +58,21 @@ layout: default
  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
  
  {% endif %}
+
+ {% if page.codeStyle == "enlighterjs" %}
+  <!-- EnlighterJS -->
+  <script type="text/javascript" src="{{ site.baseurl }}public/scripts/EnlighterJS.min.js" ></script>
+  <!-- Init Code -->
+  <script type="text/javascript">
+    // - highlight all pre + code tags (CSS3 selectors)
+    // - use javascript as default language
+    // - use theme "enlighter" as default theme
+    // - replace tabs with 2 spaces
+    EnlighterJS.init('pre','code', {
+            language : 'csharp',
+            theme: 'enlighter',
+            indent : 2,
+            textOverflow: 'scroll'
+    });
+  </script>
+{% endif %}
