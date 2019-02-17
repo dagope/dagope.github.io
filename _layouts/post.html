@@ -42,7 +42,7 @@ layout: default
   /* */
   var disqus_config = function () {
   this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.url}}";  // Replace PAGE_URL with your page's canonical URL variable
-  {% if page.disqus_page_identifier != "" %}
+  {% if page.disqus_page_identifier != nil %}
   this.page.identifier = "{{ page.disqus_page_identifier }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
   {% endif %}
   
