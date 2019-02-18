@@ -6,7 +6,7 @@ title: Novedades de C# 8.0 al escenario
 author: David Gonzalo
 comments: true
 categories: [C#, Net]
-excerpt: Cómo son vistas las novedades de c# 8.0 por quienes las usarán.
+excerpt: Todas las novedades que trae la nueva versión de C# 8.0 y las valoraciones de un selecto público.
 disqus_page_identifier: 2019021500
 words: 2433
 codeStyle: enlighterjs
