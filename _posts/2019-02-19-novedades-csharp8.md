@@ -156,7 +156,7 @@ title='Async Streams new feature Csharp 8 '
 target='_blank'
 %}
 
-Si quieres ejecutarlo tú mismo te dejo este ejemplo en mi GitHub:
+Si quieres ejecutarlo tú mismo, te dejo este ejemplo en mi GitHub:
 <br/>[https://github.com/dagope/chsarp8_async_streams](https://github.com/dagope/chsarp8_async_streams){:target="_blank"}
 
 > <p><b>Valoración del público</b>:</p>
@@ -287,7 +287,7 @@ Esta característica viene a elevar los bloques ```switch``` a su máxima potenc
 1. Ahora podremos olvidarnos del ```case``` y en su lugar poner la "condición" de varias maneras:
  - Puedo seguir usando mi palabra ```when```, esto ya viene de C#7.
  - Y ¿por qué no un *Pattern matching* que acabamos de ver antes? Pues sí, puedes y te olvidas del uso de ```when```.
- - Y ¿por qué no hacindo una deconstruccion del objeto? Pues sí, también puedes fumarte eso.
+ - Y ¿por qué no haciendo una deconstruccion del objeto? Pues sí, también puedes fumarte eso.
 
 <pre data-enlighter-language="csharp">
 return o switch
@@ -316,7 +316,7 @@ var area = figure switch
 };
 </pre>
 
-Bien, pues la imaginación es tu límite en lo que puedes hacer dentro de un ```switch```.
+Bien, pues la imaginación es tu límite con lo que puedes hacer dentro de un ```switch```.
 
 > <p><b>Valoración</b>:</p>
 > <p>Useful = <b>4.0</b></p>
@@ -436,8 +436,9 @@ Había un polizón javero entre el público que seguro moderó los resultados ;-
 
 ## Conclusiones
 
-Tras el evento hemos publicado una [página web con las estadísticas de las votaciones](https://netcoreapp.azurewebsites.net/), pero como no creo que la tengamos para siempre online, vamos a dejaros unas capturas a continuación:
+Pues hasta aquí todas las características. Hemos publicado esta [página web con las estadísticas de las votaciones](https://netcoreapp.azurewebsites.net/), pero como no creo que la tengamos para siempre online, vamos a dejaros unas capturas a continuación:
 
+En etos gráficos podemos visualizar las puntuación de cada feature con _la diagonal Vicky Mendoza_, como dijimos todo lo que sea por encima era buena señal:
 {% include code_image.html 
 image='2019/02/bcn_netcoreconf_results_crazyhot_1.png'
 title='Grafico con diagonal Vicky Mendoza'
@@ -453,7 +454,9 @@ target='_blank'
 Estos son los datos, tuyas son las conclusiones.
 
 ### Bonus y referencias:
-Este artículo tiene su hermano mellizo en el post escrito por Fernando en su blog. Te recomiendo que lo leas porque aunque se parecen, se complementan.
+Este artículo tiene su hermano mellizo en 
+[este otro](http://fernandoescolar.github.io/2019/02/19/csharp-8/){:target="_blank"}
+escrito por Fernando en su blog. Te recomiendo que lo leas porque aunque se parecen, se complementan.
 
 Y como sabrás, Visual Studio 2019 está al caer y con su presentación llegarán todas estas features de C# 8.0, si algo cambia (cosa que dudo) lo veremos el próximo 2 de abril con la presentación que puedes seguir online.
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">The Visual Studio 2019 Launch Event is Coming April 2nd, 9:00am PT.<br><br>Whether you&#39;re a C#, C++, or Python dev &amp; target the web, desktop, or cloud, we&#39;ll have demos &amp; sessions for all the new goodies coming to <a href="https://twitter.com/hashtag/VS2019?src=hash&amp;ref_src=twsrc%5Etfw">#VS2019</a>.<br><br>Save the date &amp; join us: <a href="https://t.co/uGthsbkv7h">https://t.co/uGthsbkv7h</a> <a href="https://t.co/LsgZjglrzE">pic.twitter.com/LsgZjglrzE</a></p>&mdash; Visual Studio (@VisualStudio) <a href="https://twitter.com/VisualStudio/status/1096095478628917254?ref_src=twsrc%5Etfw">14 de febrero de 2019</a></blockquote>
