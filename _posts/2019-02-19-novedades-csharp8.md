@@ -1,6 +1,6 @@
 ---
 published: false
-date: 2019-02-15 00:00:00 +0100
+date: 2019-02-19 00:00:00 +0100
 layout: post
 title: Novedades de C# 8.0 al escenario
 author: David Gonzalo
