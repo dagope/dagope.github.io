@@ -34,7 +34,11 @@ donde Fernando lo ha resumido muy bien hasta el día de hoy.
 
 Por otro lado, vamos a comentar brevemente cómo va esto de la escala _hot-crazy_.
 
-![escala sexy loca]({{site.baseurl}}public/uploads/2019/02/hot_crazy.jpg)
+
+
+<a href="https://youtu.be/8HO717nZD-4?t=6" target="_blank">
+    <img src="{{site.baseurl}}public/uploads/2019/02/hot_crazy.jpg" alt="escala sexy loca" title="Clive para ver el video explicativo de Barnie." />
+</a>
 
 Cada *feature* estará representada en el eje Y por lo útil que nos resulta y en el eje X lo extraño/loco/incomprensible (pon el sinónimo que quieras) que nos parece su implementación.
 El objetivo es estar por encima de _la diagonal Vicky Mendoza_ (x=y) para poder considerarse una buena *feature*.
