@@ -7,6 +7,7 @@ author: David Gonzalo
 comments: true
 categories: [C#, Net]
 excerpt: Todas las novedades que trae la nueva versión de C# 8.0 y las valoraciones de un selecto público.
+featured_image: /public/uploads/2019/02/bcn_netcoreconf_results_crazyhot_1.png
 disqus_page_identifier: 2019021500
 words: 2433
 codeStyle: enlighterjs
