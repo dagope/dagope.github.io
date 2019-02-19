@@ -38,7 +38,7 @@ Por otro lado, vamos a comentar brevemente cómo va esto de la escala _hot-crazy
 
 
 <a href="https://youtu.be/8HO717nZD-4?t=6" target="_blank">
-    <img src="{{site.baseurl}}public/uploads/2019/02/hot_crazy.jpg" alt="escala sexy loca" title="Clive para ver el video explicativo de Barnie." />
+    <img src="{{site.baseurl}}public/uploads/2019/02/hot_crazy.jpg" alt="escala sexy loca" title="Click para ver el video explicativo de Barnie." />
 </a>
 
 Cada *feature* estará representada en el eje Y por lo útil que nos resulta y en el eje X lo extraño/loco/incomprensible (pon el sinónimo que quieras) que nos parece su implementación.
@@ -479,7 +479,7 @@ Fue un gran evento y creo que nos divertimos dejando la vara de medir al públic
 <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://www.thingiverse.com/download:6080355&color=white&bgcolor=gray&shading=flat&rotation=yes&orientation=bottom" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 El diseño lo he dejado [aquí publicado.](https://www.thingiverse.com/thing:3434291){:target="_blank"}
 
-Y el momento de tal honorable reconocimiento:
+Y el momento de la entrega de "premios":
 <blockquote class="twitter-tweet" data-lang="es"><p lang="es" dir="ltr">Y aquí la foto finish de la Hot Crazy C# junto con <a href="https://twitter.com/fernandoescolar?ref_src=twsrc%5Etfw">@fernandoescolar</a>: la entrega de nuestro reconocimiento (único y exclusivo) al +Crazy y al +Usefull de entre los votos del público.  <a href="https://twitter.com/hashtag/netcoreconf?src=hash&amp;ref_src=twsrc%5Etfw">#netcoreconf</a> <a href="https://twitter.com/hashtag/lohemospasadogenial?src=hash&amp;ref_src=twsrc%5Etfw">#lohemospasadogenial</a> <a href="https://t.co/qgjyzJmLNn">pic.twitter.com/qgjyzJmLNn</a></p>&mdash; David Gonzalo (@dagope) <a href="https://twitter.com/dagope/status/1089629650664521730?ref_src=twsrc%5Etfw">27 de enero de 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
