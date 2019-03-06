@@ -3,6 +3,9 @@
 {% if page.words != nil %}
   {% assign words = page.words  %}
 {% endif%}
+{% if include.words != nil %}
+  {% assign words = include.words  %}
+{% endif%}
 <span class="reading-time" title="Tiempo estimado de lectura para {{ words }} palabras">
   {% if words < 360 %}
     1 min. 

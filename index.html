@@ -10,7 +10,8 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-    <span class="post-date">{{ post.date | date_to_string }} | <a href="{{ post.url }}#disqus_thread">Comentarios</a></span>
+    {% assign postNumberWords = post.content | number_of_words  %}
+    <span class="post-date">{{ post.date | date_to_string }} &#903; {% include read_time.html words=postNumberWords %} | <a href="{{ post.url }}#disqus_thread">Comentarios</a>  </span>
 
     {{ post.content | split:'<!--break-->' | first }}
     {% if post.content contains '<!--break-->' %}
