@@ -57,7 +57,7 @@ title='Resultado de creación de mklink'
 - Inicia Docker Desktop. 
 
 
-Docker debería ser iniciado sin problema. Vamos a comprobar los cambios y nos descargamos una imagen, por ejemplo:
+Docker debería ser iniciado sin problema. Vamos a comprobar los cambios descargandonos una imagen, por ejemplo:
 ```bash
 docker pull microsoft/azure-cli:2.0.59
 ```
