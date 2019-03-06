@@ -17,7 +17,6 @@ Cuando tenemos instalado **Docker CE for Windows** y configurado para imágenes 
 
 La solución no pasa por configuraciones en ficheros json de docker, olvídate de eso, lo más simple es mover el disco virtual usado por HyperV para ejecutar la distro de Linux hacia otra partición donde tengas más espacio. Ese disco virtual es un fichero que se llama **MobyLinuxVM.vhdx**.
 
-Vamos a ver cómo hacer esto.
 
 #### ¿Dónde está MobyLinuxVM.vhdx?
 Puedes averiguar la ruta del fichero que hace uso Docker desde el HyperV Manager:
