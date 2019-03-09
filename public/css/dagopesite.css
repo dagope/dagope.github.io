@@ -45,10 +45,35 @@ a.myButton {
     font-size: 17px;
     padding: 8px;
     text-decoration: none;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
 }
 a.myButton:hover {
     background-color:#3b84ce;
     text-decoration:none;
 }
+/* Share Buttons */
+ul.share-buttons{
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul.share-buttons li{
+    display: inline-block;
+  }
+  
+  ul.share-buttons .sr-only{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  ul.share-buttons img{
+    width: 48px;
+    border-width: 0px;
+  }
