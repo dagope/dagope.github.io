@@ -26,14 +26,13 @@ fi
 
 echo "deploying changes: ${TRAVIS_BUILD_NUMBER:-'unknown'}"
 
-git clone --progress --depth 1 $DEPLOY_REPO _site
+git clone --progress --depth 1 $DEPLOY_REPO --single-branch --branch test-travis _site
 
 cd _site
 
 git remote update
 git pull
 git status
-git checkout test-travis
 
 git config --global user.name "Travis CI"
 git config --global user.email dagope+travis@gmail.com
