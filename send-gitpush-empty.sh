@@ -33,7 +33,9 @@ cd _site
 git config --global user.name "Travis CI"
 git config --global user.email dagope+travis@gmail.com
 
-git checkout origin/test-travis
+git remote update
+git fetch 
+git checkout --track origin/test-travis
 git commit -m "rebuild pages: ${TRAVIS_BUILD_NUMBER:-'unknown'} " --allow-empty
 git push $DEPLOY_REPO test-travis:test-travis
 exit $?
