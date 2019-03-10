@@ -17,6 +17,8 @@ if [ -z "${TRAVIS_PULL_REQUEST:-''}" ]; then
     exit 0
 fi  
 
+echo "Branc: ${TRAVIS_BRANCH:-''}"
+
 if [ "${TRAVIS_BRANCH:-''}" != "development" ]; then
     echo "except we should only publish the development branch. stopping here"
     exit 0
@@ -31,7 +33,7 @@ cd _site
 git config --global user.name "Travis CI"
 git config --global user.email dagope+travis@gmail.com
 
-git checkout development
-git commit -m "rebuild pages: ${TRAVIS_BUILD_NUMBER:-'unknown'} " --allow-empty
-git push $DEPLOY_REPO development:development
+git checkout test-travis
+# git commit -m "rebuild pages: ${TRAVIS_BUILD_NUMBER:-'unknown'} " --allow-empty
+# git push $DEPLOY_REPO test-travis:test-travis
 exit $?
