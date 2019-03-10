@@ -1,9 +1,4 @@
 sudo: required
-language: ruby
-rvm:
-   - 2.5
-cache:
-   bundler: true
 
 before_script:
   - sudo apt-get -qq update
@@ -12,8 +7,7 @@ before_script:
 #   - sudo apt-get install libjpeg-progs
 #   - sudo apt-get install optipng
 
-install:
- - bundle install
+
 
 script:
   - ./send-gitpush-empty.sh
