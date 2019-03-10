@@ -1,5 +1,12 @@
 sudo: required
-
+language: ruby
+rvm:
+   - 2.5
+cache:
+   bundler: true
+install:
+ - bundle install
+ 
 before_script:
   - sudo apt-get -qq update
   - chmod +x send-gitpush-empty.sh
