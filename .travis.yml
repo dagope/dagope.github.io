@@ -1,17 +1,24 @@
 sudo: required
 language: ruby
-# cache:
-#   bundler: true
+rvm:
+   - 2.5
+cache:
+   bundler: true
 
 before_script:
   - sudo apt-get -qq update
-  - sudo apt-get install libjpeg-progs
-  - sudo apt-get install optipng
+#   - sudo apt-get install libjpeg-progs
+#   - sudo apt-get install optipng
+
+install:
+ - bundle install
+
 script:
   - ./send-gitpush-empty.sh
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+# env:
+#   global:
+#   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 # language: ruby
 # rvm:
