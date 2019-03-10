@@ -13,6 +13,8 @@ github:           metadata
 repository:       dagope/dagope.github.io
 userdisqus:       dagope
 
+exclude: [vendor]
+
 # Setup
 author:
   name:           "David Gonzalo"
