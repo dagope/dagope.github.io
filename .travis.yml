@@ -7,6 +7,8 @@ cache:
 
 before_script:
   - sudo apt-get -qq update
+  - chmod +x send-gitpush-empty.sh
+  
 #   - sudo apt-get install libjpeg-progs
 #   - sudo apt-get install optipng
 
