@@ -13,13 +13,16 @@ layout: default
 <hr style="border-color: #eee;"/>
 <h4>Comparte esto:</h4>
 <ul class="share-buttons">
-  <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" title="Share on Facebook" target="_blank"><img alt="Compartir en Facebook" src="{{site.baseurl}}public/img/Facebook.svg" /></a></li>
-  <li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Tweet"><img alt="Tweet" src="{{site.baseurl}}public/img/Twitter.svg" /></a></li>
-  <li><a href="https://api.whatsapp.com/send?text={{ page.title }} {{ site.url }}{{ page.url }}" rel="nofollow noopener noreferrer" target="_blank" title="Compartir en WhatsApp"><img alt="WhatsApp" src="{{site.baseurl}}public/img/WhatsApp.svg" /></a></li>
-  <li><a href="https://getpocket.com/save?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Añadir a Pocket"><img alt="Añadir a Pocket" src="{{site.baseurl}}public/img/Pocket.svg" /></a></li>
-  <li><a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Compartir en Reddit"><img alt="Compartir en Reddit" src="{{site.baseurl}}public/img/Reddit.svg" /></a></li>
-  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Compartir en LinkedIn"><img alt="Compartir en LinkedIn" src="{{site.baseurl}}public/img/LinkedIn.svg" /></a></li>
-  <li><a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Enviar email"><img alt="Enviar email" src="{{site.baseurl}}public/img/Email.svg" /></a></li>
+  {% assign customTitle = page.title | append: ' by @dagope ' | append: another_var %}
+  {% assign fullUrl = site.url | append: page.url %}
+
+  <li><a href="https://facebook.com/sharer.php?u={{ fullUrl }}" rel="nofollow" title="Share on Facebook" target="_blank"><img alt="Compartir en Facebook" src="{{site.baseurl}}public/img/Facebook.svg" /></a></li>
+  <li><a href="https://twitter.com/intent/tweet?text={{ customTitle }}&url={{ fullUrl }}" rel="nofollow" target="_blank" title="Tweet"><img alt="Tweet" src="{{site.baseurl}}public/img/Twitter.svg" /></a></li>
+  <li><a href="https://api.whatsapp.com/send?text={{ customTitle }} {{ fullUrl }}" rel="nofollow noopener noreferrer" target="_blank" title="Compartir en WhatsApp"><img alt="WhatsApp" src="{{site.baseurl}}public/img/WhatsApp.svg" /></a></li>
+  <li><a href="https://getpocket.com/save?url={{ fullUrl }}&title={{ customTitle }}" rel="nofollow" target="_blank" title="Añadir a Pocket"><img alt="Añadir a Pocket" src="{{site.baseurl}}public/img/Pocket.svg" /></a></li>
+  <li><a href="http://www.reddit.com/submit?url={{ fullUrl }}&title={{ customTitle }}" rel="nofollow" target="_blank" title="Compartir en Reddit"><img alt="Compartir en Reddit" src="{{site.baseurl}}public/img/Reddit.svg" /></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ fullUrl }}&title={{ customTitle }}" rel="nofollow" target="_blank" title="Compartir en LinkedIn"><img alt="Compartir en LinkedIn" src="{{site.baseurl}}public/img/LinkedIn.svg" /></a></li>
+  <li><a href="mailto:?subject={{ customTitle }}&body={{ fullUrl }}" rel="nofollow" target="_blank" title="Enviar email"><img alt="Enviar email" src="{{site.baseurl}}public/img/Email.svg" /></a></li>
 </ul>
 
 <div class="related">
