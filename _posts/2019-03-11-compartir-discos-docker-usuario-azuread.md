@@ -23,12 +23,12 @@ title='Error compartiendo discos en docker con usuario del AzureAD'
 
 #### Solución
 
-La solución encontrada ha sido **crear un usuario local en Windows que sea Administrador y usar sus credenciales.**. 
+La solución encontrada ha sido **crear un usuario local en Windows que sea Administrador y usar sus credenciales.** 
 Sencillo arreglo tras interpretar los errores en el log de Docker y comprenderlos. Agradecer e los cracks Edu 
 [@eiximenis](https://www.twitter.com/eiximenis/){:target="_blank"}
 y Jose Corral 
 [@jmanuelcorral](https://www.twitter.com/jmanuelcorral/){:target="_blank"}
-, por la ayuda prestada 👍 .
+por la ayuda prestada 👍 .
 
 Fácil de hacer así que vamos ello:
 
