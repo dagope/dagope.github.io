@@ -1,0 +1,61 @@
+branches:
+   only:
+   - development     # test the development branch  
+
+sudo: required
+language: ruby
+rvm:
+   - 2.5
+cache:
+   bundler: true
+      
+install:
+ - bundle install
+
+before_script:
+  - sudo apt-get -qq update
+  - chmod +x send-gitpush-empty.sh
+#   - sudo apt-get install libjpeg-progs
+#   - sudo apt-get install optipng
+
+script:
+  - ./send-gitpush-empty.sh
+
+# env:
+#   global:
+#   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+# language: ruby
+# rvm:
+#   - 2.5
+
+# # before_script:
+# #  - chmod +x ./script/cibuild
+
+# # Assume bundler is being used, therefore
+# # the `install` step will run `bundle install` by default.
+# # script: ./script/cibuild
+
+# # branch whitelist, only for GitHub Pages
+# branches:
+#   only:
+#   - development     # test the development branch  
+
+# sudo: false # route your build to the container-based infrastructure for a faster build
+
+# cache: bundler # caching bundler gem packages will speed up build
+
+# install:
+# - bundle install
+
+# env:
+#   global:
+#   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep-history: true
+#   on:
+#     branch: master
