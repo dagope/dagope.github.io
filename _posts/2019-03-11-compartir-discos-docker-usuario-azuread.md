@@ -7,7 +7,7 @@ author: David Gonzalo
 comments: true
 categories: [docker, azure]
 excerpt: Solución a compartir discos con Docker cuando tu usuario pertenece a un Azure AD.
-featured_image: /public/uploads/2019/03/docker_move.png
+featured_image: /public/uploads/2019/03/docker_share_drive_azuread_user.png
 disqus_page_identifier: 2019031100
 ---
 
