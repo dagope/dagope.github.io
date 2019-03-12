@@ -19,14 +19,14 @@ fi
 
 echo "Branc: ${TRAVIS_BRANCH:-''}"
 
-if [ "${TRAVIS_BRANCH:-''}" != "development" ]; then
-    echo "except we should only publish the development branch. stopping here"
+if [ "${TRAVIS_BRANCH:-''}" != "master" ]; then
+    echo "except we should only publish the master branch. stopping here"
     exit 0
 fi
 
 echo "deploying changes: ${TRAVIS_BUILD_NUMBER:-'unknown'}"
 
-git clone --progress --depth 1 $DEPLOY_REPO --single-branch --branch test-travis _site
+git clone --progress --depth 1 $DEPLOY_REPO --single-branch --branch master _site
 
 cd _site
 
@@ -38,5 +38,5 @@ git config --global user.name "Travis CI"
 git config --global user.email dagope+travis@gmail.com
 
 git commit -m "rebuild pages: ${TRAVIS_BUILD_NUMBER:-'unknown'} " --allow-empty
-git push $DEPLOY_REPO test-travis:test-travis
+git push $DEPLOY_REPO master:master
 exit $?

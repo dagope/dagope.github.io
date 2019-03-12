@@ -1,3 +1,10 @@
+# Dagope blog's 
+[![Build Status](https://travis-ci.com/dagope/dagope.github.io.svg?branch=master)](https://travis-ci.com/dagope/dagope.github.io)
+
+![GitHub](https://img.shields.io/github/license/dagope/dagope.github.io.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/dagope/dagope.github.io.svg)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/dagope/dagope.github.io.svg)
+
 # Introduction
 
 If you want how build a blog like this in github pages, you have written a post with all steps [here](https://dagope.github.io/2017/10/04/comenzando-blog-creando-entorno/){:target="_blank"} (spanish)

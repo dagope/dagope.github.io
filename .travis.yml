@@ -1,6 +1,6 @@
 branches:
    only:
-   - development     # test the development branch  
+   - master     # test the development branch  
 
 sudo: required
 language: ruby
