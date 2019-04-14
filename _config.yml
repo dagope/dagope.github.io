@@ -30,8 +30,8 @@ tagline:          "Diario de abordo Dagope"
 description:      "Mira, detrás de ti, un mono de tres cabezas."
 locale:           es_es
 encoding:         utf-8
-url:              https://dagope.github.io
-baseurl:          https://dagope.github.io/  
+url:              https://www.dagope.com
+baseurl:          https://www.dagope.com/  
 google_analytics: UA-107487057-1
 icon:             /public/img/defaulticon.jpg
 
