@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    image: dagope/githubpagebase:v1.0
+    ports:
+        - "4000:4000" 
+    volumes:
+      - .:/app
+    working_dir: /app
+    # command: "sh"
+    # stdin_open: true
+    # tty: true
+    command: >
+      sh -c 'bundle install &&
+           bundle install && bundle exec jekyll serve --host 0.0.0.0 -w --drafts --force_polling --config "_config.yml,_config_dev.yml"'
+
+# Como attacha en modo interactivo con docker-compose: 
+#  - descomentar lasl ineas 10, 11, 12 y comentar las 13, 14 y 15
+#  - Para entrar en modo interactivo a los containers descomentar las propiedades stdin_open y tty.       
+#  - Ahora ejecutar el sicuiente comando (si no sabes el nombre del contenedor verificar con "docker ps -a" despues de ejecutar un "docker-compose up"):
+# docker-compose up -d && docker attach dagopegithubio_web_1
