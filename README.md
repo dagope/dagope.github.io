@@ -33,3 +33,41 @@ sample:
 ```
 [text here](https://twitter.com/dagope){:target="_blank"}
 ```
+
+# Environment local - using Docker
+## Run 
+Open a terminal with project path and execute:
+```
+docker-compose up
+```
+## Stop 
+Key press `CTRL + C` to finish server and run:
+```
+docker-compose down
+```
+
+## Build base image
+```
+ docker build -t githubpagebase:v1.0 .
+```
+
+### More useful commands
+Run container from bash or powershell
+```
+docker run --rm -it -p 4000:4000 -v ${PWD}:/app -w /app githubpagebase /bin/bash
+```
+ 
+Run container from windows command line
+```
+docker run --rm -it -p 4000:4000 -v %cd%:/app -w /app githubpagebase /bin/bash
+```
+
+Run jekyll serve:
+```
+bundle exec jekyll serve --host 0.0.0.0 -w --config "_config.yml,_config_dev.yml"
+```
+
+Run container with jekyll serve:
+```
+> docker run --rm -it -p 4000:4000 -v %cd%:/app -w /app githubpagebase:v1.0 /bin/bash -c "'bundle install && bundle exec jekyll serve --host 0.0.0.0 -w --config '_config.yml,_config_dev.yml'""
+```
