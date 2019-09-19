@@ -60,7 +60,7 @@ Add-Migration -Name NombreDeMigracion -Project "App1.Data" -context SampleDbCont
 <br />Aquí podemos personalizar lo que nos interese, como por ejemplo inicializar el valor de los campos, etc... Pero ten en cuenta que las personalizaciones son únicas, es decir, si eliminas la migración y la vuelves a crear, tendrás que codificarlas de nuevo.
 <br />Y como siempre, para establecer los cambios ejecutamos el comando.
 ```bat
-Update-Database -ProjectName "App1.Data" -verbose
+Update-Database -Project "App1.Data" -verbose
 ```
 
 ## Editar la migración creada
