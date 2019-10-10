@@ -58,5 +58,13 @@ Obviamente **usa una password segura** y no la del ejemplo.
 <br/>Verás que ahora funciona correctamente 😃
 
 Happy coding!
-<br/>
+
 David.
+
+## UPDATE 10/10/2019: 
+Es probable que si ejecutas (debug) una aplicación Web con Docker configurado de forma automática desde Visual Studio, recibas un **error CT126**, que si entras en el detalle verás te dice *Permisos denegados* en la carpeta `c:\Users\NombreDelUsuario` donde está intentando montar un volumen.
+
+Como es lógico solo tienes que ir a esa carpeta y concederle permisos al usuario DockerAdmin que hiciste en los pasos de arriba y error resuelto.
+
+
+

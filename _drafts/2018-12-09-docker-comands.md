@@ -29,9 +29,9 @@ docker rmi $(docker images -q)
 ```
 ---------------------
 ## Contenedores
-#### Crear un contenedor
+#### Crear un contenedor con nombre
 ```bash
-docker run <image-name>
+docker run --name micontainer <image-name>
 ```
 #### Parar todos los contenedores
 ```bash

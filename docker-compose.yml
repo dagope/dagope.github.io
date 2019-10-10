@@ -1,7 +1,8 @@
 version: '3'
 services:
   web:
-    image: dagope/githubpagebase:v1.0
+    #image: dagope/githubpagebase:v1.0
+    image: githubpagedagopecom:v1.0
     ports:
         - "4000:4000" 
     volumes:
@@ -10,9 +11,11 @@ services:
     # command: "sh"
     # stdin_open: true
     # tty: true
+    # command: >
+    #   sh -c 'bundle install &&
+    #          bundle exec jekyll serve --host 0.0.0.0 -w --drafts --force_polling --config "_config.yml,_config_dev.yml"'
     command: >
-      sh -c 'bundle install &&
-           bundle install && bundle exec jekyll serve --host 0.0.0.0 -w --drafts --force_polling --config "_config.yml,_config_dev.yml"'
+      sh -c 'bundle exec jekyll serve --host 0.0.0.0 -w --drafts --force_polling --config "_config.yml,_config_dev.yml"'
 
 # Como attacha en modo interactivo con docker-compose: 
 #  - descomentar lasl ineas 10, 11, 12 y comentar las 13, 14 y 15
