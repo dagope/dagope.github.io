@@ -41,6 +41,10 @@ docker stop $(docker ps -a -q)
 ```bash
 docker rm $(docker ps -a -q)
 ```
+#### Ejecutar y borrar automaticamente al finalizar el contenedor
+```bash
+docker run --rm alpine
+```
 #### Arrancar y atachar al contenedor 
 ```bash
 docker start -i <container-id>
@@ -296,7 +300,20 @@ Ej: helm install stable/wordpress
 kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 ```
 
+### Útiles con Docker
 
+## Unir documentos pdf
+Abrir un terminal en la ruta donde tenemos el fichero 0.pdf y 1.pdf
+Ejecutamos:
+```cmd
+$ docker run --rm -v %cd%:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
+```
+```bash
+> docker run --rm -v $PWD:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
+```
+Obtenemos un fichero resultante con los ficheros unidos en uno solo llamado merged.pdf.
+
+Happy Codding. :)
 
 
 
