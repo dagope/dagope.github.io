@@ -22,6 +22,7 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "nokogiri", ">= 1.8.5"
+   #gem "nokogiri", ">= 1.10.4"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

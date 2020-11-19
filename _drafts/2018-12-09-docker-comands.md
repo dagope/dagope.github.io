@@ -312,6 +312,12 @@ $ docker run --rm -v %cd%:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat ou
 > docker run --rm -v $PWD:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
 ```
 Obtenemos un fichero resultante con los ficheros unidos en uno solo llamado merged.pdf.
+OJO! las rutas al montar el volumen, mejor pon tus ficheros en una ruta sin espacios temporal tal que "c:\temp" 
+
+## Obtener de un pdf otro con ciertas páginas
+> docker run --rm -v %cd%:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
+> docker run --rm -v %cd%:/pdf gkmr/pdf-tools pdftk /pdf/fullpdf.pdf cat 6-12 27 output pdf/outfile.pdf
+
 
 Happy Codding. :)
 

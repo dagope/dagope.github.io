@@ -15,9 +15,9 @@ WORKDIR /app
 
 FROM githubpagebase as githubpagedagopecom
 COPY Gemfile ./
-COPY Gemfile.lock ./
+#COPY Gemfile.lock ./
 RUN bundle install
 CMD "/bin/bash"
 
 # Build image:
-# docker build . -t githubpagedagopecom:v1.0
+# docker build . -t githubpagedagopecom:v2.0

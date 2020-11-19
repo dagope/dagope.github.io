@@ -1,0 +1,1 @@
+http://thecodemanual.pl/2020/04/02/build-templates-on-azure-devops.html

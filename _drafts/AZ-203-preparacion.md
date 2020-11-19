@@ -1,6 +1,6 @@
 
 
-He decidido prepararme para la nueva certigicación de **AZ-203 Azure Developer Associate** y a continuación voy compartir mis notas/explicaciones propias y recursos para la preparación del Examen.
+He decidido prepararme para la nueva certificación de **AZ-203 Azure Developer Associate** y a continuación voy compartir mis notas/explicaciones propias y recursos para la preparación del Examen.
 
 # Recursos principales:
 
