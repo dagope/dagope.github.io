@@ -2,7 +2,7 @@ name: Build every day
 
 on:
   schedule:
-   - cron: '55 15 * * *'
+   - cron: '45 15 * * *'
 jobs:
   rebuild:
     runs-on: ubuntu-latest
