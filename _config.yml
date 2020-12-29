@@ -24,7 +24,7 @@ author:
   profile_linkedin: https://www.linkedin.com/in/dagope/
 
 paginate:         5
-future:           false
+future:           true
 title:            "dagope's blog"
 tagline:          "Diario de abordo Dagope"
 description:      "Mira, detrás de ti, un mono de tres cabezas."
