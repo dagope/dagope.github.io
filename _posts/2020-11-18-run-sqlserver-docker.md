@@ -1,6 +1,6 @@
 ---
 published: true
-date: 2020-12-29 23:00:00 +0100
+date: 2021-12-29 23:00:00 +0100
 layout: post
 title: "Arrancando SQL Server en docker linux"
 author: David Gonzalo
