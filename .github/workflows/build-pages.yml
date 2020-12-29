@@ -1,18 +1,12 @@
-# This is a basic workflow that is manually triggered
+# Manually triggered and Schedyle by cron expression
 
 name: Schedule Rebuild GithubPages
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-        description: 'Person to greet'
-        default: 'Go'
+    
   schedule:
-   - cron: '45 15 * * *'
+   - cron: '15 5 * * *'
 
 jobs:
   rebuild:
