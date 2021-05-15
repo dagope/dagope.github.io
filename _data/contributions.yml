@@ -1,0 +1,247 @@
+# - name: name of event, talk, external posts, open source projects, etc...
+#   role: speaker | organizer | writer | contributor
+#   description: 
+#   mode: online | onsite
+#   web:
+#   video:
+#   slides:
+#   github_repo:
+#   date: 
+#   place: 
+
+
+- name: Progreso de vacunación COVID en España por twitter con XantarBot 
+  role: contributor 
+  description: Un proyecto Open Source en .NET para publicar diaríamente un tweet con una barra de progreso en el perfil XantarBot. Usando Github Actions diariamente para el procesado de datos públicos.
+  mode: online 
+  web: https://twitter.com/XantarBot
+  video:
+  slides:
+  github_repo: https://github.com/XantarDev/XantarBot
+  date: 2021-04-08
+  place: 
+
+- name: XantarDev entra como meetup de la DotNet Foundation.
+  role: contributor 
+  description: Tras evaluarlo la organización de XantarDev decide solicitar el ingreso en la DotNet Foundation y nos reciben con los brazos abiertos. Ahora pasamos a formar parte de la gran red de meetups de esta fundación.
+  mode: online 
+  web: https://www.meetup.com/es-ES/XantarDev/
+  video:
+  slides: https://twitter.com/XantarDev/status/1381914890554777600?s=20
+  date: 2021-04-08
+  place: 
+
+- name: Modernización de aplicaciones .NET
+  role: speaker
+  description: En este taller podrás comprender todos los pasos necesarios para modernizar tus aplicaciones .NET y dar el salto a la nube.
+  mode: online 
+  web: https://www.eventbrite.es/e/entradas-evento-tokiota-modernizacion-de-aplicacionesnet-148315320115?aff=ebdsoporgprofile#
+  video:
+  slides:
+  github_repo:
+  date: 2021-04-15
+  place:   
+
+- name: LicorcaConf 2021
+  role: organizer
+  description: Organizador en la edición 2021 de un evento online de tecnología, en directo, gratuito y dinamizado con 2 tracks. Uno quedó grabado con las charlas de los/as speakers y el track licor totalmente abierto a todo a la comunidad y en donde por momentos estuvieron más de 30 personas colaborando. Se puede disfrutar de las charlas en Youtube.
+  mode: online
+  web: https://compostelatech.org/licorcaconf
+  video: https://www.youtube.com/watch?v=yeKkVsSbliA&t=383s
+  slides:
+  github_repo: https://github.com/compostelatech/compostelatech.github.io
+  date: 2021-04-10
+  place: 
+
+- name: "Arrancando SQL Server en docker linux"
+  role: writer
+  description: Artículo donde se explica una manera sencilla de cómo arrancar un contenedor de SQLServer y tener nuestro propio servidor de base de datos en cuestión de segundos.
+  mode: online
+  web: https://blog.tokiota.com/2021/03/15/arrancando-sql-server-docker/
+  video:
+  slides:
+  github_repo:
+  date: 2021-03-15
+  place: 
+
+- name: Creación open source de blog técnico de Tokiota
+  role: contributor
+  description: Un repositorio público en la organización de Tokiota en GitHub donde queda expuesto el código de la página alojada sobre GitHubPages donde se aceptan colaboraciones. De una manera muy fácil puedes levantar tu entorno locamente con Docker y empezar a contribuir o por qué no usar este mismo repositorio de base para crear tu blog.
+  mode: online
+  web: https://blog.tokiota.com/
+  video:
+  slides:
+  github_repo: https://github.com/Tokiota/tokiota.github.com
+  date: 2021-03-01
+  place: 
+
+- name: Modernización de aplicaciones .NET
+  role: speaker
+  description: En este taller podrás comprender todos los pasos necesarios para modernizar tus aplicaciones .NET y dar el salto a la nube.
+  mode: online 
+  web: https://www.eventbrite.es/e/entradas-tokiota-modernizacion-de-aplicacionesnet-141115398957?aff=ebdsoporgprofile#
+  video:
+  slides:
+  github_repo:
+  date: 2021-02-25
+  place:   
+
+- name: Modernización de aplicaciones .Net y migración a la nube
+  role: speaker
+  description: En este taller podrás comprender todos los pasos necesarios para modernizar tus aplicaciones .NET y dar el salto a la nube.
+  mode: online 
+  web: https://www.eventbrite.es/e/entradas-evento-tokiota-modernizacion-de-aplicaciones-net-y-migracion-a-la-nube-134574101761?aff=ebdsoporgprofile#
+  video:
+  slides:
+  github_repo:
+  date: 2021-01-14
+  place: 
+
+- name: Aparición en el podCast NTN 73 de @ElBruno por el evento de la licorcaconf
+  role: contributor
+  description: Tras haber líado por twitter al gran Bruno Capuano para entrar en el track Licor del pasado evento, cumple su invitación de hacer un podcast a toda la organización sobre el evento, comunidad y aquí el resultado. Una gran experiencia. Desde Galicia y Canadá para el mundo.
+  mode: online
+  web: https://elbruno.com/2020/12/06/podcast-ntn-73-licorcaconf-eventos-gallegos-de-tecnologia-para-todo-el-mundo/
+  video: 
+  slides: 
+  github_repo: 
+  date: 2020-12-06
+  place: 
+
+- name: LicorcaConf 2020
+  role: organizer
+  description: Organizador en la primera edición de este evento sobre tecnología y desarrollo con 6 charlas y 8 speakers. Donde se habló de revisiones de código, User Exprience, testing, LegalTech y mucho más con el primer evento que introduce un track en videollamada abierta donde hacer networking e interactuar con los ponentes tras cada charla, con colaboraciones e invitaciones que se alargó hasta las 4 de la madrugada.
+  mode: online
+  web: https://compostelatech.org/licorcaconf/2020
+  video: https://www.youtube.com/watch?v=zoaA6ruNhbI
+  slides: 
+  github_repo: https://github.com/compostelatech/compostelatech.github.io
+  date: 2020-11-21
+  place: 
+
+- name: Virtual Community Day (no emitido)
+  role: speaker
+  description: Colaboración en una charla para el track Virtual Community Day con @VictorEstival y compañeros/as de la comunidad de Azure en España, aunque finalmente no fuese emitido se pasó un buen momento.
+  mode: online
+  web: https://twitter.com/dagope/status/1288025174919516161?s=20
+  video: 
+  slides:
+  github_repo: 
+  date: 2020-07-28
+  place: 
+
+- name: Lightning Talks
+  role: organizer
+  description: En esta ocasión con XantarDev organizamos un evento en directo de charlas cortas sobre tecnología que fueron elegidas exclusivamente por la comunidad por el título y descripcion de las propuestas, a través de formularios y votaciones. Por la comunidad y para la comunidad, con un resultado muy bueno y acogedor.
+  mode: online
+  web: https://xantardev.org/lightning-talks/
+  video: https://www.youtube.com/watch?v=dPpk4K_EKSE
+  slides:
+  github_repo: 
+  date: 2020-05-16
+  place: 
+
+- name: Trabajar en remoto y no morir en el intento
+  role: speaker
+  description: Charla y evento organizado junto a @hackaboss_ para compartir mi experiencia trabajando remotamente en casa desde hace años.
+  mode: online
+  web: https://xantardev.org/trabajar-en-remoto/
+  video: https://www.youtube.com/watch?v=WQDJ2O6MkLE
+  slides:
+  github_repo:
+  date: 2020-04-10
+  place: 
+
+
+- name: .NET-Man and the OWASP
+  role: speaker
+  description: Junto con @dariocp impartimos una charla sobre el Top 10 de OWASP en .NET. Los los diez riesgos de seguridad más importantes en aplicaciones web según la organización OWASP, cuyo objetivo es crear conciencia acerca de la seguridad en aplicaciones mediante la identificación de algunos de los riesgos más críticos que enfrentan las organizaciones.
+  mode: onsite
+  web: https://xantardev.org/san-valentech/
+  video:
+  slides: https://github.com/dagope/owasp_netman/blob/master/presentacion/dotNET-Man%20and%20the%20OWASP.pdf
+  github_repo: https://github.com/dagope/owasp_netman
+  date: 2020-02-14
+  place: Santiago de Compostela
+
+- name: San Valentech
+  role: organizer
+  description: Organizador del evento más romántico en XantarDev y la fecha lo prometía. Dos charlas en pareja con la que los ponentes prometen no dejarnos indiferentes. Además, a parte de las charlas para un día tan especial hubo preparadas algunas sorpresas.
+  mode: onsite
+  web: https://xantardev.org/san-valentech/
+  video:
+  slides:
+  github_repo: 
+  date: 2020-02-14
+  place: Santiago de Compostela  
+
+- name: Datos y privacidad
+  role: organizer
+  description: "Abrimos el año con el que va ser una de las Techdencias del 2020: los datos y la privacidad. ¿Sabes con quien compartes tu información? ¿Está el sistema preparado para proteger a los usuarios frente a injerencias no deseadas? ¿Es necesario un nuevo activismo por parte de los ciudadanos?"
+  mode: onsite
+  web: https://www.meetup.com/es-ES/XantarDev/events/267712904/
+  video:
+  slides:
+  github_repo: 
+  date: 2020-01-18
+  place: Santiago de Compostela
+
+- name: Sé lo que hizo tu último App Service
+  role: speaker
+  description: en esta ocasión tuve la oportunidad de hablar sobre lo que pasa cuando nuestra app no funciona en Azure. Una sesión donde enseñamos las herramientas que nos pueden ayudar a ver que nos está fallando, porque y como podemos solucionarlo. Buenas prácticas para el desarrollo en App Services y Application Insight.
+  mode: onsite
+  web: https://galicia.netcoreconf.com/
+  video:
+  slides:
+  github_repo:
+  date: 2019-09-28
+  place: Santiago de Compostela
+
+- name: Galicia NetCoreConf
+  role: organizer
+  description: en esta ocasión tuve la oportunidad de hablar sobre Application Insights en aplicaciones junto al compañero Robert Bermejo.
+  mode: onsite
+  web: https://galicia.netcoreconf.com/
+  video:
+  slides:
+  github_repo:
+  date: 2019-09-28
+  place: Santiago de Compostela  
+
+- name: XantarDev III Aniversario
+  role: organizer
+  description: Organizador del evento del 3º aniversario de la comunidad XantarDev. Seis charlas, divididas en cuatro por la mañana y dos por la tarde. Evento de tecnología, gratuito y promocionando la colaboración social entre los asistentes de la recogida de alimentos para el banco de alimentos de Santiago.
+  mode: onsite
+  web: https://xantardev.org/xantardev-iii-aniversario/
+  video:
+  slides:
+  github_repo:
+  date: 2019-06-08
+  place: Santiago de Compostela  
+
+- name: CompostelaTech Open Space 2019
+  role: organizer
+  description: Organizador y colaborador del Open Space realizado por el grupo de comunidades de CompostelaTech. Se habló de presencia de la mujer en los sectores tecnológicos y cómo gestionar la tecnología en un ambiente educativo.
+  mode: onsite
+  web: https://compostelatech.org/resultado-primer-open-space-compostela-tech/
+  video:
+  slides:
+  github_repo:
+  date: 2019-07-06
+  place: Santiago de Compostela
+
+# - name: Articulo CampusMVP
+#   role: organizer
+#   description: 
+#   mode: online
+#   web:
+#   video:
+#   slides:
+#   github_repo:
+#   date: 
+#   place: 
+
+
+
+
+### pendiente añadir mas cosas

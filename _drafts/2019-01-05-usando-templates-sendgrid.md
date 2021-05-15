@@ -55,11 +55,11 @@ Con una aplicación de consola en NetCore pero podrías ejecutarlo desde cualqui
 Con el siguiente código podemos hacer el envio de un mail.
 
 ## Actividad de SendGrid
-En el apartado Activity podemos ver el estado de todos los envios que realicemos. 
+En el apartado Activity podemos ver el estado de todos los envíos que realicemos. 
 
 ## Consejo
-Puedes crear versiones de tus plantillas en SendGrid pero es recomendable llevar el control del codigo html y el json de datos de prueba en ficheros de tu repositorio de codigo fuente, te ahorrarás disgustos.
+Puedes crear versiones de tus plantillas en SendGrid pero es recomendable llevar el control del código html y el json de datos de prueba en ficheros de tu repositorio de codigo fuente, te ahorrarás disgustos.
 
 
-Documentación donde ver todas las opciones soportdas y el schema de datos.
+Documentación donde ver todas las opciones soportadas y el schema de datos.
 https://dynamic-templates.api-docs.io/3.0/mail-send-with-dynamic-transactional-templates/v3-mail-send
