@@ -8,28 +8,33 @@
 #   github_repo:
 #   date: 
 #   place: 
-
+#   tweet: 
+#   meetup:
 
 - name: Progreso de vacunación COVID en España por twitter con XantarBot 
   role: contributor 
-  description: Un proyecto Open Source en .NET para publicar diaríamente un tweet con una barra de progreso en el perfil XantarBot. Usando Github Actions diariamente para el procesado de datos públicos.
-  mode: online 
+  description: Un proyecto Open Source en .NET para publicar diariamente un tweet con una barra de progreso en el perfil XantarBot. Usando Github Actions diariamente para el procesado de datos públicos.
+  mode:
   web: https://twitter.com/XantarBot
   video:
   slides:
   github_repo: https://github.com/XantarDev/XantarBot
   date: 2021-04-08
   place: 
+  tweet:
+  meetup:
 
 - name: XantarDev entra como meetup de la DotNet Foundation.
   role: contributor 
   description: Tras evaluarlo la organización de XantarDev decide solicitar el ingreso en la DotNet Foundation y nos reciben con los brazos abiertos. Ahora pasamos a formar parte de la gran red de meetups de esta fundación.
-  mode: online 
+  mode: 
   web: https://www.meetup.com/es-ES/XantarDev/
   video:
   slides: https://twitter.com/XantarDev/status/1381914890554777600?s=20
   date: 2021-04-08
-  place: 
+  place:
+  tweet:
+  meetup:
 
 - name: Modernización de aplicaciones .NET
   role: speaker
@@ -40,7 +45,9 @@
   slides:
   github_repo:
   date: 2021-04-15
-  place:   
+  place:
+  tweet: https://twitter.com/tokiota_IT/status/1346091113078259713?s=20
+  meetup:  
 
 - name: LicorcaConf 2021
   role: organizer
@@ -51,29 +58,35 @@
   slides:
   github_repo: https://github.com/compostelatech/compostelatech.github.io
   date: 2021-04-10
-  place: 
+  place:
+  tweet: https://twitter.com/dagope/status/1380796961125761028?s=20
+  meetup:
 
 - name: "Arrancando SQL Server en docker linux"
   role: writer
   description: Artículo donde se explica una manera sencilla de cómo arrancar un contenedor de SQLServer y tener nuestro propio servidor de base de datos en cuestión de segundos.
-  mode: online
+  mode:
   web: https://blog.tokiota.com/2021/03/15/arrancando-sql-server-docker/
   video:
   slides:
   github_repo:
   date: 2021-03-15
-  place: 
+  place:
+  tweet: 
+  meetup:
 
 - name: Creación open source de blog técnico de Tokiota
   role: contributor
   description: Un repositorio público en la organización de Tokiota en GitHub donde queda expuesto el código de la página alojada sobre GitHubPages donde se aceptan colaboraciones. De una manera muy fácil puedes levantar tu entorno locamente con Docker y empezar a contribuir o por qué no usar este mismo repositorio de base para crear tu blog.
-  mode: online
+  mode:
   web: https://blog.tokiota.com/
   video:
   slides:
   github_repo: https://github.com/Tokiota/tokiota.github.com
   date: 2021-03-01
-  place: 
+  place:
+  tweet: 
+  meetup:
 
 - name: Modernización de aplicaciones .NET
   role: speaker
@@ -84,7 +97,9 @@
   slides:
   github_repo:
   date: 2021-02-25
-  place:   
+  place:
+  tweet: https://twitter.com/tokiota_IT/status/1346091113078259713?s=20
+  meetup:  
 
 - name: Modernización de aplicaciones .Net y migración a la nube
   role: speaker
@@ -95,18 +110,22 @@
   slides:
   github_repo:
   date: 2021-01-14
-  place: 
+  place:
+  tweet: https://twitter.com/tokiota_IT/status/1346091113078259713?s=20
+  meetup:
 
 - name: Aparición en el podCast NTN 73 de @ElBruno por el evento de la licorcaconf
   role: contributor
-  description: Tras haber líado por twitter al gran Bruno Capuano para entrar en el track Licor del pasado evento, cumple su invitación de hacer un podcast a toda la organización sobre el evento, comunidad y aquí el resultado. Una gran experiencia. Desde Galicia y Canadá para el mundo.
+  description: Tras haber liado por twitter al gran Bruno Capuano para entrar en el track Licor del pasado evento, cumple su invitación de hacer un podcast a toda la organización sobre el evento, comunidad y aquí el resultado. Una gran experiencia. Desde Galicia y Canadá para el mundo.
   mode: online
   web: https://elbruno.com/2020/12/06/podcast-ntn-73-licorcaconf-eventos-gallegos-de-tecnologia-para-todo-el-mundo/
   video: 
   slides: 
   github_repo: 
   date: 2020-12-06
-  place: 
+  place:
+  tweet: https://twitter.com/CompostelaTech/status/1333095639450791938?s=20
+  meetup:
 
 - name: LicorcaConf 2020
   role: organizer
@@ -117,18 +136,49 @@
   slides: 
   github_repo: https://github.com/compostelatech/compostelatech.github.io
   date: 2020-11-21
-  place: 
+  place:
+  tweet: https://twitter.com/dagope/status/1330131878569971719?s=20
+  meetup:
+
+
+- name: Windows Terminal Settings
+  role: contributor
+  description: Publicado mis configuraciones sobre el proyecto Windows Terminal.
+  mode:
+  web: 
+  video: 
+  slides: 
+  github_repo: https://github.com/dagope/WindowsTerminalSettings
+  date: 2020-10-06
+  place:
+  tweet: 
+  meetup:  
+
+- name: Clean Google Photos Take Out
+  role: contributor
+  description: Publicado un proyecto de consola para la limpieza de ficheros duplicados si te descargas tus fotos de Google Fotos a través del Google Take Out.
+  mode:
+  web: 
+  video: 
+  slides: 
+  github_repo: https://github.com/dagope/CleanGooglePhotosTakeOut
+  date: 2020-09-27
+  place:
+  tweet: https://twitter.com/dagope/status/1326829693484593152?s=20
+  meetup:  
 
 - name: Virtual Community Day (no emitido)
   role: speaker
   description: Colaboración en una charla para el track Virtual Community Day con @VictorEstival y compañeros/as de la comunidad de Azure en España, aunque finalmente no fuese emitido se pasó un buen momento.
   mode: online
-  web: https://twitter.com/dagope/status/1288025174919516161?s=20
+  web: 
   video: 
   slides:
   github_repo: 
   date: 2020-07-28
-  place: 
+  place:
+  tweet: https://twitter.com/dagope/status/1288025174919516161?s=20
+  meetup:
 
 - name: Lightning Talks
   role: organizer
@@ -139,23 +189,39 @@
   slides:
   github_repo: 
   date: 2020-05-16
-  place: 
+  place:
+  tweet: https://twitter.com/CrisBarreiro_/status/1261695680155996160?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/270406431/
 
 - name: Trabajar en remoto y no morir en el intento
   role: speaker
-  description: Charla y evento organizado junto a @hackaboss_ para compartir mi experiencia trabajando remotamente en casa desde hace años.
+  description: Charla donde compartir mi experiencia trabajando remotamente en casa desde hace años.
   mode: online
   web: https://xantardev.org/trabajar-en-remoto/
   video: https://www.youtube.com/watch?v=WQDJ2O6MkLE
   slides:
   github_repo:
   date: 2020-04-10
-  place: 
+  place:
+  tweet: https://twitter.com/dagope/status/1248660556250320899?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/269892813/
 
+- name: Trabajar en remoto y no morir en el intento
+  role: organizer
+  description: Organizado junto a @hackaboss_ este evento online sobre experiencias en el trabajo remoto.
+  mode: online
+  web: https://xantardev.org/trabajar-en-remoto/
+  video: https://www.youtube.com/watch?v=WQDJ2O6MkLE
+  slides:
+  github_repo:
+  date: 2020-04-10
+  place:
+  tweet: https://twitter.com/davorpa/status/1248717266524549121?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/269892813/  
 
 - name: .NET-Man and the OWASP
   role: speaker
-  description: Junto con @dariocp impartimos una charla sobre el Top 10 de OWASP en .NET. Los los diez riesgos de seguridad más importantes en aplicaciones web según la organización OWASP, cuyo objetivo es crear conciencia acerca de la seguridad en aplicaciones mediante la identificación de algunos de los riesgos más críticos que enfrentan las organizaciones.
+  description: Junto con @dariocp impartimos una charla sobre el Top 10 de OWASP en .NET. Los diez riesgos de seguridad más importantes en aplicaciones web según la organización OWASP, cuyo objetivo es crear conciencia acerca de la seguridad en aplicaciones mediante la identificación de algunos de los riesgos más críticos que enfrentan las organizaciones.
   mode: onsite
   web: https://xantardev.org/san-valentech/
   video:
@@ -163,6 +229,8 @@
   github_repo: https://github.com/dagope/owasp_netman
   date: 2020-02-14
   place: Santiago de Compostela
+  tweet: https://twitter.com/tokiota_IT/status/1228369813673848834
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/268289342/
 
 - name: San Valentech
   role: organizer
@@ -174,6 +242,8 @@
   github_repo: 
   date: 2020-02-14
   place: Santiago de Compostela  
+  tweet: https://twitter.com/XantarDev/status/1228213561853218816
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/268289342/
 
 - name: Datos y privacidad
   role: organizer
@@ -185,6 +255,8 @@
   github_repo: 
   date: 2020-01-18
   place: Santiago de Compostela
+  tweet: https://twitter.com/XantarDev/status/1218496504907948033?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/267712904/
 
 - name: Sé lo que hizo tu último App Service
   role: speaker
@@ -192,32 +264,51 @@
   mode: onsite
   web: https://galicia.netcoreconf.com/
   video:
-  slides:
-  github_repo:
+  slides: https://github.com/dagope/NetCoreConfGalicia2019/blob/master/netcoreconf_template.pptx
+  github_repo: https://github.com/dagope/NetCoreConfGalicia2019
   date: 2019-09-28
   place: Santiago de Compostela
+  tweet: https://twitter.com/netcoreconf/status/1171000291967361024?s=20
+  meetup:
 
 - name: Galicia NetCoreConf
   role: organizer
-  description: en esta ocasión tuve la oportunidad de hablar sobre Application Insights en aplicaciones junto al compañero Robert Bermejo.
+  description: Organizador y principal liante, junto a @ferraces, de hacer el mayor evento de .NET en Galicia hasta el momento. Con una asistencia de más de 150 personas y ponentes de alto nivel llegados de toda España.
   mode: onsite
   web: https://galicia.netcoreconf.com/
   video:
   slides:
-  github_repo:
+  github_repo: https://github.com/netcoreconf/NetcoreconfGAL_2019
   date: 2019-09-28
   place: Santiago de Compostela  
+  tweet: https://twitter.com/netcoreconf/status/1177991289289224192?s=20
+  meetup:
 
-- name: XantarDev III Aniversario
+- name: "DataGirls - Mujeres En BigData"
   role: organizer
-  description: Organizador del evento del 3º aniversario de la comunidad XantarDev. Seis charlas, divididas en cuatro por la mañana y dos por la tarde. Evento de tecnología, gratuito y promocionando la colaboración social entre los asistentes de la recogida de alimentos para el banco de alimentos de Santiago.
+  description: Coorganizador en el evento con XantarDev ayudando a que técnicamente todo funcionase en un nuevo espacio. Con una buena asistencia para ver a @RLadies y las pedazo 4 ponentes con muy buenas charlas técnicas.
   mode: onsite
-  web: https://xantardev.org/xantardev-iii-aniversario/
+  web: https://xantardev.org/datagirls/
   video:
   slides:
   github_repo:
-  date: 2019-06-08
+  date: 2019-09-07
   place: Santiago de Compostela  
+  tweet: https://twitter.com/dagope/status/1170408525576777730?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/263648508/
+  
+- name: Birratech con GDG Santiago.
+  role: speaker
+  description: Compartiendo experiencia de mis años trabajando en remoto a los asistentes al evento organizado por GDG Santiago.
+  mode: onsite
+  web: https://www.meetup.com/es-ES/gdgsantiagoes/events/263150679
+  video:
+  slides:
+  github_repo:
+  date: 2019-07-23
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/GDGSantiagoES/status/1153727518974906369?s=20
+  meetup: https://www.meetup.com/es-ES/gdgsantiagoes/events/263150679
 
 - name: CompostelaTech Open Space 2019
   role: organizer
@@ -229,19 +320,372 @@
   github_repo:
   date: 2019-07-06
   place: Santiago de Compostela
+  tweet: https://twitter.com/dagope/status/1153606528181702656?s=20
+  meetup:
 
-# - name: Articulo CampusMVP
-#   role: organizer
-#   description: 
-#   mode: online
-#   web:
-#   video:
-#   slides:
-#   github_repo:
-#   date: 
-#   place: 
+- name: XantarDev III Aniversario
+  role: organizer
+  description: Organizador del evento del 3º aniversario de la comunidad XantarDev. Seis charlas, divididas en cuatro por la mañana y dos por la tarde. Evento de tecnología, gratuito y promocionando la colaboración social entre los asistentes de la recogida de alimentos para el banco de alimentos de Santiago.
+  mode: onsite
+  web: https://xantardev.org/xantardev-iii-aniversario/
+  video:
+  slides:
+  github_repo:
+  date: 2019-06-08
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/dagope/status/1137265571999997952?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/260679021/
+
+- name: Cómo dockerizar un entorno de Github Pages
+  role: writer
+  description: Articulo publicado en CampusMVP donde cuento con detalle como dockerizar nuestro entorno de GitHub Pages y gestionar nuestra web o nuestro blog sin tener que instalar nada en el equipo y para tener un entorno de desarrollo más versátil y fácil de replicar en cualquier PC.
+  mode: onsite
+  web: https://www.campusmvp.es/recursos/post/como-dockerizar-un-entorno-de-github-pages.aspx
+  video:
+  slides:
+  github_repo:
+  date: 2019-05-20
+  place:
+  tweet: https://twitter.com/campusMVP/status/1130763159478968320?s=20 
+  meetup:
+
+- name: Mis PDFs en Azure, gracias - ¡¿What?! - Global Azure Bootcamp 2019 Barcelona
+  role: speaker
+  description: Cuantas veces te ha ocurrido que tienes una web donde muestras los resultados con un diseño fantástico y te dicen. “¡Enhorabuena! PERO esto tengo que poder enviarlo en pdf, y de paso con la plantilla corporativa. Añade un botoncito para descargar PDF“. Después de bajar algún santo evalúas que es negocio y piensas, ¿Que opciones tenemos cuando todo está desplegado en Azure? Veremos cuales existen y como generar ficheros pdf en la nube de manera fácil y sencilla.
+  mode: onsite
+  web: https://github.com/GABSpain/Global-Azure-Bootcamp-2019/tree/master/Barcelona
+  video:
+  slides: https://es.slideshare.net/dagope84/global-azure-bootcamp-2019-pdfs-en-azure
+  github_repo:
+  date: 2019-04-27
+  place: Barcelona
+  tweet: https://twitter.com/dagope/status/1122022516082585600?s=20
+  meetup:
+
+- name: "XD/DX - Llena Azure de contenedoresXantarDev Team"
+  role: organizer
+  description: Organización express de evento por la visita de Edu Tomàs en tierras gallegas y así de paso nos cuente como llenar Azure de Contenedores.
+  mode: onsite
+  web: https://www.meetup.com/es-ES/XantarDev/events/260242992
+  video:
+  slides: 
+  github_repo:
+  date: 2019-04-09
+  place: Santiago de Compostela
+  tweet: https://twitter.com/dagope/status/1112776176240680961?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/260242992/
+
+- name: Presentación de CompostelaTech
+  role: speaker
+  description: "De la unión de comunidades en la zona de Santiago de Compostela nace CompostelaTech. Un lugar donde compartir y tener un punto común de organización entre todas las comunidades cercanas."
+  mode: onsite
+  web: https://CompostelaTech.org
+  video:
+  slides: 
+  github_repo:
+  date: 2019-03-29
+  place: Santiago de Compostela
+  tweet: https://twitter.com/CompostelaTech/status/1111650584422215680?s=20
+  meetup: 
+
+- name: "MarzalDev - GUI Testing y OAuth en webs SPA"
+  role: organizer
+  description: "En esta ocasión se organizó un evento liando a Pablo Santos para hablar sobre GuiTestSharp y cómo hacer testing en C# para aplicaciones de escritorio tanto en macOS, Linux y Windows. Y en la segunda charla de la tarde, Unai Zorrilla sobre OAuth2 para aplicaciones basadas en el navegador (SPA)."
+  mode: onsite
+  web: https://xantardev.org/2019-03-marzaldev-gui-testing-y-oauth-en-webs-spa/
+  video:
+  slides: 
+  github_repo:
+  date: 2019-03-29
+  place: Santiago de Compostela
+  tweet: https://twitter.com/XantarDev/status/1111523618821939201?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/259322750/
+
+- name: Aparece uno de mis artículos en los enlaces interesantes de @VariableNotFound
+  role: contributor
+  description: Ilusionado de mi primera aparición con mi artículo de Novedades sobre C# 8.0 en el listado de .NET en la recopilación de VariableNotFound.
+  mode:
+  web: https://www.variablenotfound.com/2019/02/enlaces-interesantes-351.html
+  video:
+  slides: 
+  github_repo:
+  date: 2019-02-25
+  place:
+  tweet: https://twitter.com/dagope/status/1103224046123134976?s=20
+  meetup:
+
+- name: "XantarDev vuelve el 23F"
+  role: organizer
+  description: "Organizando nuevo evento del año con 3 charlas técnicas sobre el proyecto Menéame, CSS y Deep Learning. Como siempre amenizando con un buen networking."
+  mode: onsite
+  web: https://xantardev.org/xantardev-vuelve-el-23f/
+  video:
+  slides: 
+  github_repo:
+  date: 2019-02-23
+  place: Santiago de Compostela
+  tweet: https://twitter.com/XantarDev/status/1099269466276405248?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/258842630/
+
+- name: "Hot Crazy CSharp - NetCoreConf Barcelona"
+  role: speaker
+  description: Una charla divertida exponiendo las novedades que nos traerá C# 8.0 en este 2019 aplicando la escala HotCrazy, diversión asegurada y compartida con el buen amigo @fernandoEscolar.
+  mode: onsite
+  web: https://netcoreconf.com/2019/barcelona
+  video:
+  slides: 
+  github_repo: https://dagope.com/2019/02/19/novedades-csharp8/
+  date: 2019-01-23
+  place: Barcelona
+  tweet: https://twitter.com/dagope/status/1089629650664521730?s=20
+  meetup:
+
+- name: "XantarJ"
+  role: organizer
+  description: "Organizador por XantarDev de un evento basado en tecnologías Java entre diversas comunidades de Galicia."
+  mode: onsite
+  web: https://xantardev.org/xantarj-lo-prometido-es-deuda/
+  video:
+  slides: 
+  github_repo:
+  date: 2018-09-29
+  place: Santiago de Compostela
+  tweet: https://twitter.com/dagope/status/1045958413979668480?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/254349390/
+
+- name: "SummerDev - ALM y Calzoncillos de Superman"
+  role: organizer
+  description: organizador en un nuevo evento de XantarDev con los ponentes, Jose Manuel Alarcón con su charla recientemente impartida en la dotnet2018 y Fernando Escolar la gestión del ciclo de vida de las aplicaciones, y como lo hace para estar tranquilo liderando un equipo y un proyecto.
+  mode: onsite
+  web: https://xantardev.org/summerdev-2018-06/
+  video:
+  slides: 
+  github_repo: 
+  date: 2018-06-22
+  place: Santiago de Compostela
+  tweet: https://twitter.com/XantarDev/status/1010446622143188992
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/251188980/
+
+- name: XantarDev 2º Aniversario
+  role: organizer
+  description: Organizador del 2º aniversario de la comunidad XantarDev. C4P, sponsors, lugar, asistentes para un evento con 5 charlas tecnológicas desde temas legales, testing con Selenium y .NEt, VueJS, Git, Realidad Virtual y un gran networking.
+  mode: onsite
+  web: https://xantardev.org/aniversario-2018/
+  video:
+  slides:
+  github_repo:
+  date: 2018-05-26
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/dagope/status/1000295068908048384
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/249937071/
+
+- name: "Bots - What? How? Why?!"
+  role: speaker
+  description: "Los bots, esa nueva plataforma de desarrollo que ha evolucionado para que seas capaz de “crearte a alguien” que haga el trabajo por ti. Pero ¿que son realmente? ¿cómo podemos construirlos? que utilidad pueden tener y hasta donde podemos llegar? Intentaremos pincelar las respuestas y desde una visión técnica nos introduciremos en la creación de bots y como dotarlos de inteligencia"
+  mode: onsite
+  web: https://xantardev.org/xantardev-06-abril-2018-testing-con-selenium-conociendo-rad-studio-c/
+  video:
+  slides:
+  github_repo: https://github.com/dagope/201802CadizBots
+  date: 2018-04-06
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/dagope/status/982238787471200256?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/249937071/
+
+- name: "XantarDev 06 abril 2018 – Big Data | Bots, What? How? Why?"
+  role: organizer
+  description: "Organización de un evento de XantarDev donde Aurora nos introdujo en el mundo Big Data. Sustituyendo de última hora al ponente ausente con una charla de Bots."
+  mode: onsite
+  web: https://xantardev.org/xantardev-06-abril-2018-testing-con-selenium-conociendo-rad-studio-c/
+  video:
+  slides:
+  github_repo: https://github.com/dagope/201802CadizBots
+  date: 2018-04-06
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/XantarDev/status/982348949288665088
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/248500513/
+
+- name: "Bots ¡Hasta el infinito y más allá!"
+  role: speaker
+  description: Los bots, esa nueva plataforma de desarrollo que ha evolucionado para que seas capaz de "crearte a alguien" que haga el trabajo por tí. Pero, ¿qué son realmente? ¿Cómo podemos construirlos? ¿Qué utilidad pueden tener y hasta dónde podemos llegar? Intentaremos pincelar las respuestas y desde una visión técnica nos introduciremos en la creación de bots y como dotarlos de inteligencia.
+  mode: onsite
+  web: 
+  video:
+  slides: 
+  github_repo: https://github.com/dagope/201802CadizBots
+  date: 2018-03-22
+  place: Santiago de Compostela
+  tweet: https://twitter.com/dagope/status/977131783627198465
+  meetup: https://www.meetup.com/es-ES/gdgsantiagoes/events/248675954
+
+- name: "El poder de un bot"
+  role: speaker
+  description: "Los bots, esa nueva plataforma de desarrollo que ha evolucionado para que seas capaz de 'crearte a alguien' que haga el trabajo por ti. ¿Pero qué son realmente? de donde vienen y a dónde van? como podemos construirlos? cuál es su poder? en qué nos pueden ayudar? ¿Son realmente tan inteligentes?"
+  mode: onsite
+  web: 
+  video:
+  slides: https://github.com/dagope/201802CadizBots/blob/master/Bots_presentacion_cadiz_20180220.pdf
+  github_repo: https://github.com/dagope/201802CadizBots
+  date: 2018-03-14
+  place: Málaga
+  tweet: https://twitter.com/dotnetmalaga/status/973973993286979590?s=20
+  meetup: https://www.meetup.com/es-ES/dotnetMALAGA/events/248532161/
+
+- name: "Universidad de Cádiz - Bots ¡Hasta el infinito y más allá!"
+  role: speaker
+  description: 
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: https://github.com/dagope/201802CadizBots
+  date: 2018-02-20
+  place: Cádiz
+  tweet: https://twitter.com/dagope/status/966020407580078082?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/248500513/
+
+- name: "Taller para hacernos un blog y aprendemos tecnologías Jekyll, GitHub, VS Code, MarkDown"
+  role: speaker
+  description: "Quieres saber cómo hacer un blog y llevarte el tuyo hecho? Si te pica la curiosidad acercarte a este nuevo XantarDev con tu portátil. En esta ocasión David Gonzalo (http://twitter.com/dagope) nos guiará con un taller para que construyas tu propio blog y te puedas ir con el publicado. Veremos herramientas y tecnologías como Jekyll, GitHubPages, Visual Studio Code, Markdown... y comentaremos algunos trucos para que todo sea más fácil."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: https://github.com/dagope/TemplateBlog
+  date: 2017-11-04
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/NoLegalTech/status/926752843788374016
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/248500513/
+
+- name: "Legal Dev"
+  role: organizer
+  description: "Organizando un evento muy legal para desarrolladores donde se contarán qué aspectos legales nos influyen en nuestro trabajo como desarrolladores y en nuestras creaciones tecnológicas. Prometieron no soltar muchas frases en latín que usan en el gremio legal."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2017-09-15
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/XantarDev/status/908734137510563840?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/243168534/
 
 
+- name: "Introducción a NetCore"
+  role: speaker
+  description: "¿Qué ha cambiado en .NET? ¿Qué es eso llamado NetCore? Esas respuestas y más, las podremos ver en esta sesión. Diferencias con las otras anteriores versiones de .NET, el nuevo SDK, unos ejemplos de ASP.NET Core, un poco de Entity Framework Core."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2017-05-27
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/dagope/status/868392196529115136?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/238910166/
+
+- name: "XantarDev 1º Aniversario - NetCore, Azure, Programación de videojuegos"
+  role: organizer
+  description: "El sábado 27 de mayo cumplimos un año! Y hemos preparado un meetup como se merece, hablando de tecnologías actuales: NetCore, Azure y programación de videojuegos."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2017-05-27
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/mercu01/status/868386124347125760?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/238910166/
 
 
-### pendiente añadir mas cosas
+- name: "Web Build Day: Polymer, Node.js y Docker"
+  role: organizer
+  description: "Un día dedicado a tecnologías web donde 3 ponentes compartieron conocimiento de Polymer, Node.JS y Docker."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2017-02-18
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/tokiota_IT/status/832928842268475392?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/237068088/
+
+
+- name: "Introducción a Xamarin + Azure."
+  role: speaker
+  description: "Dentro del Xamarin Day impartimos una sesión de introducción a Xamarin y un workshop conjunto con el amigo @rfsouto."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2017-01-14
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/XantarDev/status/820221625023000581
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/236360848/
+
+- name: "Xamarin Day - SCQ"
+  role: organizer
+  description: "un día dedicado a Xamarin, donde encontrarás interesantes sesiones técnicas, un taller y quien sabe si algún que otro regalito. Podrás conocer las últimas novedades de Xamarin y además iniciarte en el mundo del desarrollo móvil multiplataforma: Android, IOs, Windows, Mac."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2017-01-14
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/XantarDev/status/820222272527011840
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/236360848/
+
+- name: "Jornada de espacios Maker en la Galicia Maker Faire"
+  role: speaker
+  description: "El 1 y 2 de octubre tendremos en Santiago la Maker Faire Galicia 2016 y nuestros compañeros de RecunchoMaker nos han invitado a I Xornada de Espazos Maker el sábado 1 de octubre con el objetivo juntarse y promover la colaboración entre makers y diferentes asociaciones dispersas por Galicia."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2016-10-01
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/dagope/status/782145941948301316
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/234398337/
+
+- name: "Xamarin, un mono entre plataforma"
+  role: speaker
+  description: "Introducción a la plataforma de Xamarin"
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2016-05-21
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/dariocp/status/733964726250655749?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/230377954/
+
+- name: "XantarDev I Edition"
+  role: organizer
+  description: "Nace una comunidad técnica! Con ilusión y con ganas de poder compartir experiencias, trucos, conocimientos… y aprovechar de pasar un buen rato aprendiendo sobre tecnología."
+  mode: onsite
+  web: 
+  video:
+  slides:
+  github_repo: 
+  date: 2016-05-21
+  place: Santiago de Compostela  
+  tweet: https://twitter.com/XantarDev/status/733943119415238657?s=20
+  meetup: https://www.meetup.com/es-ES/XantarDev/events/230377954/
+
+- name: "KendoUI potencia tu web"
+  role: speaker
+  description: "En esta sesión intentaremos dar una visión de que es KendoUI, y como sus widgets nos ayudan a tener una interfaz web potente donde el usuario pueda manejar los datos de una forma fácil, sin que tengamos que morir en el intento. Nos apoyaremos con ASPNET y WebAPI en la parte de servidor para demostrar que de verdad funciona."
+  mode: onsite
+  web: https://www.eventbrite.es/e/entradas-techdencias-four-sessions-noviembre-2013-9374881523#
+  video:
+  slides: https://www.slideshare.net/dagope84/kendo-ui-4sessions
+  github_repo: https://github.com/dagope/kendo_4sessions
+  date: 2013-11-30
+  place: Barcelona
+  tweet: https://twitter.com/Techdencias/status/406724578971750400?s=20
+  meetup:

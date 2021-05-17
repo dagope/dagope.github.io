@@ -1,7 +1,13 @@
 ---
 layout: page
-title: Acerca de?
+title: Acerca de
 ---
+
+<div class="container_photo">
+  <div>
+      <img loading="lazy" src="{{ site.baseurl }}public/img/dagope.jpg">
+  </div>
+</div>
 
 Hola!, me llamo David y este es mi blog. ¿por qué Dagope? Porque es el resultado de aplicar un `Substring(0,2)` a mi nombre y apellidos. 
 
@@ -9,16 +15,20 @@ Hola!, me llamo David y este es mi blog. ¿por qué Dagope? Porque es el resulta
   <div style="margin-left:10px"><span style="display: inline-block;">🐙</span>Pulpo </div>
   <div style="margin-left:10px"><span style="display: inline-block;">🍺</span>1906</div>
   <div style="margin-left:10px"><span style="display: inline-block;">🥃</span>Licor-café</div>
-  <div style="margin-left:10px"><span style="display: inline-block;">🚀</span><s>Misit Life</s></div>
   <div style="margin-left:10px"><span style="display: inline-block;">💼</span>Tokiota</div>
 </div>
 
 <br>
-Actualmente trabajo como Team Lead y desarrollador en [Tokiota](http://www.tokiota.com){:target="_blank"}, también entro en el rango de emprendedores en donde soy cofundador y responsable tecnológico de [Misit Life](http://www.misitlife.com){:target="_blank"}, y por si las horas de sueño no eran lo suficientemente cortas, me embarqué con unos amigos en crear comunidad técnica en la zona de Galicia. [XantarDev](https://www.xantardev.org/){:target="_blank"}, donde organizamos eventos y quedadas para hablar de temas relacionados con el mundo del desarrollo de software, directa o indirectamente. Además tambien he creado con las comunidades de la zona [CompostelaTech](https://compostelatech.org){:target="_blank"}
 
-Como bien intuyes este blog irá de desarrollo de software, y la razón de no haberme animado antes a tener un blog ha sido por miedo a escribir, y seguramente por falta de tiempo. Pero voy a perder ese miedo, y a intentar que este blog me cumpla la utilidad de tener bien ordenadas una gran cantidad de notas que me han acompañado en los proyectos que he trabajado. Mi principal objetivo: tener un orden dentro de tanto desorden. Espero poco a poco ir publicando esos temas que tengo en el tintero. Puede que alguien más que a mí le resulte útil.
+Actualmente trabajo como mentor y desarrollador Cloud en [Tokiota](http://www.tokiota.com){:target="_blank"}, tocando cositas por allí por aquí intentando crear y sin romper nada por el camino 😄. Formando día a día, en mil y unas cosas, principalmente en entornos y tecnologías Microsoft porque el tiempo no da para más.
 
-Puedes contactarme en:
+Desde hace años embarcado con unos amigos en crear comunidad técnica en la zona de Galicia, [XantarDev](https://www.xantardev.org/){:target="_blank"}, donde organizamos eventos y quedadas para hablar de temas relacionados con el mundo del desarrollo de software. Como la vergüenza no recuerdo cuando la perdí a veces tambien me lían y me dejo liar para dar algunas charlitas por ahí. Con el fin de devolver a la comunidad lo tanto que a mí me aporta. Tambien soy uno de los creadores de [CompostelaTech](https://compostelatech.org){:target="_blank"} en donde colaboro conjuntamente, apoyando y dando más visibilidad a las comunidades. Siempre alrededor de un buen pulpo y una cervecita y una sobremesa de licor café, es una manera perfecta de regar la comunidad y que crezca.
+
+Mis aportaciones en charlas, eventos, y demás saros las puedes [ver aquí]({{site.baseurl}}comunidad). 
+
+Si no te has dado cuenta te diré que este blog irá de desarrollo de software, seguramente por falta de tiempo no escriba todo lo que me gustaría. Mi meta intentar que este blog cumpla la utilidad de tener bien ordenadas una gran cantidad de notas que me han acompañado en los proyectos que he trabajado y compartir otras tantas que voy generando. Tener un orden dentro de tanto desorden. Espero poco a poco ir publicando esos temas que tengo en el tintero. Puede que alguien más que a mí le resulte útil.
+
+Puedes encontrarme en:
 * [@dagope](https://twitter.com/dagope){:target="_blank"}
 * [GitHub](https://github.com/dagope){:target="_blank"}
 * [LinkedIn](https://www.linkedin.com/in/dagope/){:target="_blank"}
