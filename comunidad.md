@@ -15,9 +15,10 @@ Aquí podrás encontrar un historial de las publicaciones, charlas, videos y con
     {% for item in site.data.contributions %}
     {% assign m = item.date | date: "%-m" | minus: 1 %}
     {% assign month = months[m] %}
+    {% assign day = item.date | date: "%d" %}
     {% assign year = item.date | date: "%Y" %}
     <tr>
-      <td style="width:75px;"><span title="{{item.date}}">{{ year }}, {{month}}</span></td>
+      <td style="width:75px;"><span title="{{item.date}}">{{ year }}, {{day}}<br/>{{month}}</span></td>
       <td>
         <!-- speaker | organizer | writer | contributor -->
         {% if item.role == "speaker" %} 
