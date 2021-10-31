@@ -11,6 +11,20 @@
 #   tweet: 
 #   meetup:
 
+
+- name: Cómo montar tu propia casa encantada (IoT, domotica)
+  role: speaker
+  description: Directo en el Twitch de @fernandoescolar junto con @elbruno y @ferraces en una sesión especial de halloween enseñando como encantar tu casa con dispositivos IoT e integrando con HomeAssistant.
+  mode: online
+  web: 
+  video: https://www.twitch.tv/fernandoescolar/schedule?vodID=1192467747
+  slides:
+  github_repo: 
+  date: 2021-10-30
+  place: 
+  tweet:
+  meetup:
+
 - name: Progreso de vacunación COVID en España por twitter con XantarBot 
   role: contributor 
   description: Un proyecto Open Source en .NET para publicar diariamente un tweet con una barra de progreso en el perfil XantarBot. Usando Github Actions diariamente para el procesado de datos públicos.
