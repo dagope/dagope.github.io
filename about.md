@@ -15,12 +15,12 @@ Hola!, me llamo David y este es mi blog. ¿por qué Dagope? Porque es el resulta
   <div style="margin-left:10px"><span style="display: inline-block;">🐙</span>Pulpo </div>
   <div style="margin-left:10px"><span style="display: inline-block;">🍺</span>1906</div>
   <div style="margin-left:10px"><span style="display: inline-block;">🥃</span>Licor-café</div>
-  <div style="margin-left:10px"><span style="display: inline-block;">💼</span>Tokiota</div>
+  <div style="margin-left:10px"><span style="display: inline-block;">💻</span>Dev</div>
 </div>
 
 <br>
 
-Actualmente trabajo como mentor y desarrollador Cloud en [Tokiota](http://www.tokiota.com){:target="_blank"}, tocando cositas por de aquí y de allí, intentando crear y sin romper nada por el camino 😄. Formándome día a día en mil y unas cosas, principalmente en entornos y tecnologías Microsoft porque el tiempo no da para más.
+Me dedico al mundo de la tecnología y el desarrollado, intentando crear sin romper nada por el camino 😄. Formándome día a día en mil y unas cosas, principalmente en entornos y tecnologías Microsoft.
 
 Desde hace años embarcado con unos amigos en crear comunidad técnica en la zona de Galicia, [XantarDev](https://www.xantardev.org/){:target="_blank"}, donde organizamos eventos y quedadas para hablar de temas relacionados con el mundo del desarrollo de software. Como la vergüenza no recuerdo cuando la perdí, soy fácil de líar para dar alguna charla allí donde me invitan. Con el fin de devolver a la comunidad un poco de lo tanto que me aporta. También soy uno de los creadores de [CompostelaTech](https://compostelatech.org){:target="_blank"} en donde colaboro dando más visibilidad a las comunidades. Siempre alrededor de un buen pulpo y una cervecita y una sobremesa de licor café, es una manera perfecta de hacer comunidad y que crezca.
 
@@ -35,7 +35,7 @@ Puedes encontrarme en:
 
 ## Cómo se hizo?
 
-- Semilla: el blog fue construido a partir del [blog de Fernando Escolar](https://developerro.com/){:target="_blank"} y combinando varios temas de esta [lista](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}. 
+- Semilla: el blog fue construido a partir de un blog amigo, [Fernando Escolar](https://developerro.com/){:target="_blank"}. Combinando varios temas de esta [lista](https://github.com/jekyll/jekyll/wiki/Themes){:target="_blank"}. 
 - Alojamiento: [GitHubPages](https://help.github.com/categories/github-pages-basics/){:target="_blank"}. 
 - Evolución: aplicándole varias mejoras visuales con poco de html, algo de css por allá y algún script javascript que otro. También está fácilmente preparado para arrancar en local con *docker compose*.
 - Imágenes: La mayoría de imágenes son libres obtenidas de [pixabay](https://pixabay.com/){:target="_blank"} o algunas composiciones creadas por mí. También hago uso de iconos de 
