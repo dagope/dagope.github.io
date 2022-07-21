@@ -12,7 +12,7 @@
 #   meetup:
 
 
-- name: Top 10 problemas en proyectos .NET
+- name: DotNet 2022 - Top 10 problemas en proyectos .NET
   role: speaker
   description: En el evento DotNet 2022 en Madrid tuve, compartí una charla sobre el top 10 de los problemas más relevantes en el mundo del desarrollo con .NET. Desde una visión/opinión personal a lo largo de de los años de carrera profesional.
   mode: onsite
@@ -25,7 +25,7 @@
   tweet: https://twitter.com/dagope/status/1541765746551930881?s=20&t=4eX5puY2GT-VeyJFc1p-YQ
   meetup:
 
-- name: Retrospectiva de comunidad - XantarDev
+- name: Retrospectiva de comunidad XantarDev
   role: speaker
   description: Al margen de organizar el evento pudimos realizar una retrospectiva de los años de la comunidad con todos los presentes. Exponiendo datos y esfuerzo de @XantarDev.
   mode: onsite
@@ -38,7 +38,7 @@
   tweet: https://twitter.com/dagope/status/1533093648484732928?s=20&t=CEMBtDUeSsfwZ7CeXUgRqQ
   meetup:
 
-- name: Evento XantarDev Aniversario IV+II
+- name: aAniversario IV+II - XantarDev
   role: speaker
   description: Evento aniversario de comunidad, 5 charlas y una retro. 5 patrocinadores y se recaudaron 549€ para la asociacion de O Refusio de Bando.
   mode: onsite
@@ -51,7 +51,7 @@
   tweet: https://twitter.com/XantarDev/status/1532842469808914438?s=20&t=CEMBtDUeSsfwZ7CeXUgRqQ
   meetup:
 
-- name: Evento -Seguimos en pie- comunidad XantarDev.
+- name: Seguimos en pie - comunidad XantarDev.
   role: organizer
   description: Primer evento presencial de la comunidad XantarDev tras la pandemia. Con 3 charlas. Y se recaudaron 400€ para la asociacion Paluso.
   mode: onsite
