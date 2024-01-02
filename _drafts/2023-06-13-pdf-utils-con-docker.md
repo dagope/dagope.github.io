@@ -25,7 +25,7 @@ title='Imagen de logo pdf y docker juntos'
 Abrir un terminal en la ruta donde tenemos el fichero 0.pdf y 1.pdf
 Ejecutamos:
 ```bash
-λ docker run --rm -v %cd%:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
+λ docker run --rm -v .:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
 ```
 ```bash
 > docker run --rm -v $PWD:/pdf gkmr/pdf-tools pdftk /pdf/0.pdf /pdf/1.pdf cat output /pdf/merged.pdf
