@@ -20,6 +20,8 @@ Hola!, me llamo David y este es mi blog. ¿por qué Dagope? Porque es el resulta
 
 <br>
 
+test
+
 Me dedico al mundo de la tecnología y el desarrollado, intentando crear sin romper nada por el camino 😄. Formándome día a día en mil y unas cosas, principalmente en entornos y tecnologías Microsoft.
 
 Desde hace años embarcado con unos amigos en crear comunidad técnica en la zona de Galicia, [XantarDev](https://www.xantardev.org/){:target="_blank"}, donde organizamos eventos y quedadas para hablar de temas relacionados con el mundo del desarrollo de software. Como la vergüenza no recuerdo cuando la perdí, soy fácil de líar para dar alguna charla allí donde me invitan. Con el fin de devolver a la comunidad un poco de lo tanto que me aporta. También soy uno de los creadores de [CompostelaTech](https://compostelatech.org){:target="_blank"} en donde colaboro dando más visibilidad a las comunidades. Siempre alrededor de un buen pulpo y una cervecita y una sobremesa de licor café, es una manera perfecta de hacer comunidad y que crezca.
