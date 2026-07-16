@@ -42,8 +42,9 @@ Para sesión interactiva:
 Si al unir los pdfs puede suceder que el tamaño del archivo resultando sea demasiado grande. Para eso podemos usar lo siguiente:
 
 ```bash
-λ docker run --rm -v %cd%:/pdf gkmr/pdf-tools gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dBATCH  -dQUIET -sOutputFile=pdf/output.pdf pdf/merged.pdf
+λ docker run --rm -v %cd%:/pdf gkmr/pdf-tools gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH  -dQUIET -sOutputFile=pdf/output.pdf pdf/merged.pdf
 ```
+Si quieres más comprimido puedes jugar con los valores de `-dPDFSETTINGS=/ebook`
 
 ## Obtener de un pdf otro con ciertas páginas
 Si queremos obtener únicamente las hojas de un fichero podemos usar el siguiente comando. 
